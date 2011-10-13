@@ -16,7 +16,7 @@
 		<ul>
 			<li>Date : <?php echo $infos['date'] ?>
 			</li>
-			<li>Selectors : <?php echo $infos['authors'] ?>
+			<li>Selector(s) : <?php echo $infos['authors'] ?>
 			</li>
 		</ul>
 	</div>
