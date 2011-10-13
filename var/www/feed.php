@@ -23,10 +23,10 @@ $feed->setDateModified(time());
 // Create feed entries
 foreach ($compilations as $compilation) {
 	// Gather compilation informations
-	$pathManifest = sprintf('%s/%s/manifest.ini', dirname(__FILE__), $compilation);
+	$pathManifest = sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation);
 	$manifest = parse_ini_file($pathManifest);
 	$statManifest = stat($pathManifest);
-	$tracks = glob(sprintf('%s/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
+	$tracks = glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
 	$entryBody = array();
 	$entryBody[] = '<ol>';
 	foreach ($tracks as $track) {

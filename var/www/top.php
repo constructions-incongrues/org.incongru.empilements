@@ -3,9 +3,9 @@ $compilation = filter_input(INPUT_GET, 'c');
 $title = 'Empilements';
 $descriptionCompilation = "Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.";
 if ($compilation) {
-	$infos = parse_ini_file(sprintf('%s/%s/manifest.ini', dirname(__FILE__), $compilation));
+	$infos = parse_ini_file(sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation));
 	$title = sprintf('%s | Empilements', $infos['title']);
-	$tracks = glob(sprintf('%s/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
+	$tracks = glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
 	$descriptionCompilation = sprintf('%d titres sélectionnés avec amour par %s.', count($tracks), $infos['authors']);
 }
 ?>
@@ -31,7 +31,7 @@ More info: h5bp.com/b/378 -->
 <meta property="og:locale" content="fr" />
 <meta property="og:description" content="<?php echo $descriptionCompilation ?>" />
 <?php if ($compilation): ?>
-<meta property="og:image" content="<?php echo sprintf('http://empilements.incongru.org/%s/logo.png', $compilation) ?>" />
+<meta property="og:image" content="<?php echo sprintf('http://empilements.incongru.org/compilations/%s/cover.gif', $compilation) ?>" />
 <?php endif; ?>
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
