@@ -49,6 +49,7 @@ More info: h5bp.com/b/378 -->
   <!-- end CSS-->
 
 <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/empilements-incongrus">
 
 <!-- All JavaScript at the bottom, except for Modernizr / Respond.
 Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
