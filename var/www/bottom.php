@@ -1,8 +1,11 @@
-	<hr style="clear:both;" />
-	<p>N'hésitez surtout pas à nous <a href="mailto:empilements@incongru.org">soumettre</a> vos compilations !</p>
-	<p class="credits">Ce projet est <a href="https://github.com/contructions-incongrues/empilements">développé</a> par <a href="http://www.constructions-incongrues.net">Constructions Incongrues</a> et hébergé par <a href="http://www.pastis-hosting.net">Pastis Hosting</a> | <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a></p>
-	<br /><br /><br /><br /><br /><br />
-	
+	<div class="row">
+		<div class="span16">
+			<hr style="clear:both;" />
+			<p>N'hésitez surtout pas à nous <a href="mailto:empilements@incongru.org">soumettre</a> vos compilations !</p>
+			<p class="credits">Ce projet est <a href="https://github.com/contructions-incongrues/empilements">développé</a> par <a href="http://www.constructions-incongrues.net">Constructions Incongrues</a> et hébergé par <a href="http://www.pastis-hosting.net">Pastis Hosting</a> | <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a></p>
+			<br /><br /><br /><br /><br /><br />
+		</div>
+	</div>
 	</div>
   <!-- JavaScript at the bottom for fast page loading -->
 

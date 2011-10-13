@@ -60,8 +60,12 @@ For optimal performance, use a custom Modernizr build: www.modernizr.com/downloa
 <body>
 
 	<div class="container">
-		<h1><a href="http://empilements.incongru.org">Empilements</a></h1>
-		<p class="description">
-Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.
-		</p>
-		<p>Les voici, plus arbitraires que jamais : <a href="?c=eventail">L'Éventail de la Destinée</a>, <a href="?c=buttfetishvol2">The Butt Fetish Anthology, vol. 2</a>, <a href="?c=savage-desktop-clean-out">SAVAGE DESKTOP CLEAN OUT</a>.</p>
+		<div class="row">
+			<div class="span16">
+				<h1><a href="http://empilements.incongru.org">Empilements</a></h1>
+				<p class="description">
+		Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.
+				</p>
+				<p>Les voici, plus arbitraires que jamais : <a href="?c=eventail">L'Éventail de la Destinée</a>, <a href="?c=buttfetishvol2">The Butt Fetish Anthology, vol. 2</a>, <a href="?c=savage-desktop-clean-out">SAVAGE DESKTOP CLEAN OUT</a>.</p>
+			</div>
+		</div><!-- /div.row -->
