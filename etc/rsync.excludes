@@ -3,4 +3,4 @@
 .project
 .settings/
 .git
-var/www/compilations/*/tracks/*
+*.mp3
