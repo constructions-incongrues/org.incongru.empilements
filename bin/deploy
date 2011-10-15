@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/rsync --delete-after --exclude-from=etc/rsync.excludes --links -avz -e ssh var/www/* org_incongru@empilements.incongru.org:/srv/bouteille_data/plesk-vhosts/incongru.org/subdomains/empilements/httpdocs/
