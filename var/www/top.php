@@ -1,12 +1,27 @@
 <?php
+$compilations = array_map('basename', glob(dirname(__FILE__).'/compilations/*', GLOB_ONLYDIR));
+$compilationsSpec = array();
+foreach ($compilations as $compilation) {
+	$compilationsSpec[$compilation] = array(
+		'manifest' 	=> parse_ini_file(sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation)),
+		'tracks'	=> glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation)),
+	);
+	$compilationsSpec[$compilation]['description'] = sprintf(
+		'%d titres sélectionnés avec amour par %s.', 
+		count($compilationsSpec[$compilation]['tracks']), 
+		$compilationsSpec[$compilation]['manifest']['title']
+	);
+	$compilationsSpec[$compilation]['title'] = sprintf('%s | Empilements', $compilationsSpec[$compilation]['manifest']['title']);
+}
+
 $compilation = filter_input(INPUT_GET, 'c'); 
 $title = 'Empilements';
 $descriptionCompilation = "Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.";
 if ($compilation) {
-	$infos = parse_ini_file(sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation));
-	$title = sprintf('%s | Empilements', $infos['title']);
-	$tracks = glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
-	$descriptionCompilation = sprintf('%d titres sélectionnés avec amour par %s.', count($tracks), $infos['authors']);
+	$infos = $compilationsSpec[$compilation]['manifest'];
+	$title = $compilationsSpec[$compilation]['title'];
+	$tracks = $compilationsSpec[$compilation]['tracks'];
+	$descriptionCompilation = $compilationsSpec[$compilation]['description'];
 }
 ?>
 <!doctype html>
@@ -66,6 +81,11 @@ For optimal performance, use a custom Modernizr build: www.modernizr.com/downloa
 				<p class="description">
 		Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.
 				</p>
-				<p>Les voici, plus arbitraires que jamais : <a href="?c=eventail">L'Éventail de la Destinée</a>, <a href="?c=buttfetishvol2">The Butt Fetish Anthology, vol. 2</a>, <a href="?c=savage-desktop-clean-out">SAVAGE DESKTOP CLEAN OUT</a>, <a href="?c=gravitation-universelle-universelle-universelle">Gravitation Universelle Universelle Universelle</a>.</p>
+				<p>
+					Les voici, plus arbitraires que jamais :<br />
+<?php foreach ($compilationsSpec as $id => $spec): ?>
+	<a href="?c=<?php echo $id ?>" title="Écouter et télécharger la compilation <?php echo $spec['manifest']['title'] ?>"><?php echo $spec['manifest']['title'] ?></a> |
+<?php endforeach; ?>
+				</p>
 			</div>
 		</div><!-- /div.row -->
