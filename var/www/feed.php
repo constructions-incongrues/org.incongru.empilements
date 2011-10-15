@@ -36,7 +36,7 @@ foreach ($compilations as $compilation) {
 	foreach ($tracks as $track) {
 		$entryBody[] = sprintf('<li>%s</li>', preg_replace('/^\d+\d+ - (.*)$/', '$1', basename($track, '.mp3')));
 	}
-	$entryBody[] = sprintf('<img src="http://empilements.incongru.org/%s/logo.png" />', $compilation);
+	$entryBody[] = sprintf('<img src="http://empilements.incongru.org/compilations/%s/cover.gif" />', $compilation);
 	$entryBody[] = '</ol>';
 	$entries[$statManifest['mtime']] = array(
 		'manifest'	=> $manifest,
@@ -44,6 +44,7 @@ foreach ($compilations as $compilation) {
 	);
 	
 }
+
 ksort($entries, SORT_NUMERIC);
 $entries = array_reverse($entries, true);
 foreach ($entries as $mtime => $item) {
@@ -51,7 +52,7 @@ foreach ($entries as $mtime => $item) {
 	$entry = $feed->createEntry();
 	$entry->setTitle(sprintf('%s, par %s', $item['manifest']['title'], $item['manifest']['authors']));
 	$entry->setLink($item['manifest']['url']);
-	$entry->setContent(implode("\n", $entryBody));
+	$entry->setContent(implode("\n", $item['body']));
 	$entry->setDateCreated($mtime);
 	$entry->setDateModified($mtime);
 	$feed->addEntry($entry);

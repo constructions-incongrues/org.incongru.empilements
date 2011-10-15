@@ -10,7 +10,7 @@ function get_compilations_specs($directory) {
 		$compilationsSpec[$compilation]['description'] = sprintf(
 			'%d titres sélectionnés avec amour par %s.', 
 			count($compilationsSpec[$compilation]['tracks']), 
-			$compilationsSpec[$compilation]['manifest']['title']
+			$compilationsSpec[$compilation]['manifest']['authors']
 		);
 		$compilationsSpec[$compilation]['title'] = sprintf('%s | Empilements', $compilationsSpec[$compilation]['manifest']['title']);
 	}
