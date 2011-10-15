@@ -3,3 +3,4 @@
 .project
 .settings/
 .git
+var/www/compilations/*/tracks/*
