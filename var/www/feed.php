@@ -1,6 +1,7 @@
 <?php
 // List of available compilations
-$compilations = array('gravitation-universelle-universelle-universelle', 'savage-desktop-clean-out', 'buttfetishvol2', 'eventail');
+require(dirname(__FILE__).'/lib.php');
+$compilations = array_keys(get_compilations_specs(dirname(__FILE__).'/compilations'));
 
 // Setup autoloading
 set_include_path(get_include_path().PATH_SEPARATOR.'/usr/share/php');

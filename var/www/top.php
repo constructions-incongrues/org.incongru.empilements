@@ -1,19 +1,6 @@
 <?php
-$compilations = array_map('basename', glob(dirname(__FILE__).'/compilations/*', GLOB_ONLYDIR));
-$compilationsSpec = array();
-foreach ($compilations as $compilation) {
-	$compilationsSpec[$compilation] = array(
-		'manifest' 	=> parse_ini_file(sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation)),
-		'tracks'	=> glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation)),
-	);
-	$compilationsSpec[$compilation]['description'] = sprintf(
-		'%d titres sélectionnés avec amour par %s.', 
-		count($compilationsSpec[$compilation]['tracks']), 
-		$compilationsSpec[$compilation]['manifest']['title']
-	);
-	$compilationsSpec[$compilation]['title'] = sprintf('%s | Empilements', $compilationsSpec[$compilation]['manifest']['title']);
-}
-
+require(dirname(__FILE__).'/lib.php');
+$compilationsSpec = get_compilations_specs(dirname(__FILE__).'/compilations');
 $compilation = filter_input(INPUT_GET, 'c'); 
 $title = 'Empilements';
 $descriptionCompilation = "Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.";
