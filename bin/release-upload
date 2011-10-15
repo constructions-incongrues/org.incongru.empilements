@@ -1,3 +1,8 @@
 #!/bin/sh
 RELEASE=$1
-/usr/bin/rsync --delete-after --exclude-from=etc/rsync.excludes --links -avzC -e ssh "$1" org_incongru@empilements.incongru.org:/srv/bouteille_data/plesk-vhosts/incongru.org/subdomains/empilements/httpdocs/compilations/`basename $1`
+ARGS=$2
+mp3gain -r -k -t $1/tracks/*.mp3
+git add $RELEASE && git commit -m "Updates to compilation `basename $RELEASE`" && git push origin master
+/usr/bin/rsync $ARGS --progress --links -avzC -e ssh "$RELEASE" org_incongru@empilements.incongru.org:/srv/bouteille_data/plesk-vhosts/incongru.org/subdomains/empilements/httpdocs/compilations/`basename $RELEASE`
+echo "Compilation is available at http://empilements.incongru.org/?c=`basename $RELEASE`"
+echo ""

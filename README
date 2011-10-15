@@ -1,0 +1,5 @@
+To create a new compilation :
+ - Open a terminal, go to projects root directory
+ - Run : ./bin/release-init my-compilation-title 
+ - Follow instructions
+ - You are done !
