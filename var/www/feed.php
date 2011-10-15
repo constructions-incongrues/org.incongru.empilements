@@ -19,14 +19,17 @@ $feed->addAuthor(array(
     'email' => 'empilements@incongru.org',
     'uri'   => 'http://empilements.incongru.org'
 ));
-$feed->setDateModified(time());
 
 // Create feed entries
+$timestampNewest = 0;
 foreach ($compilations as $compilation) {
 	// Gather compilation informations
 	$pathManifest = sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation);
 	$manifest = parse_ini_file($pathManifest);
 	$statManifest = stat($pathManifest);
+	if ($statManifest['mtime'] > $timestampNewest) {
+		$timestampNewest = $statManifest['mtime'];
+	}
 	$tracks = glob(sprintf('%s/compilations/%s/tracks/*.mp3', dirname(__FILE__), $compilation));
 	$entryBody = array();
 	$entryBody[] = '<ol>';
@@ -35,16 +38,26 @@ foreach ($compilations as $compilation) {
 	}
 	$entryBody[] = sprintf('<img src="http://empilements.incongru.org/%s/logo.png" />', $compilation);
 	$entryBody[] = '</ol>';
+	$entries[$statManifest['mtime']] = array(
+		'manifest'	=> $manifest,
+		'body'		=> $entryBody
+	);
 	
+}
+ksort($entries, SORT_NUMERIC);
+$entries = array_reverse($entries, true);
+foreach ($entries as $mtime => $item) {
 	// Create entry
 	$entry = $feed->createEntry();
-	$entry->setTitle(sprintf('%s, par %s', $manifest['title'], $manifest['authors']));
-	$entry->setLink($manifest['url']);
+	$entry->setTitle(sprintf('%s, par %s', $item['manifest']['title'], $item['manifest']['authors']));
+	$entry->setLink($item['manifest']['url']);
 	$entry->setContent(implode("\n", $entryBody));
-	$entry->setDateCreated($statManifest['mtime']);
-	$entry->setDateModified($statManifest['mtime']);
+	$entry->setDateCreated($mtime);
+	$entry->setDateModified($mtime);
 	$feed->addEntry($entry);
 }
+
+$feed->setDateModified($timestampNewest);
 
 // Serve feed
 $xml = $feed->export('rss');
