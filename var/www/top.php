@@ -29,8 +29,8 @@ More info: h5bp.com/b/378 -->
 <meta name="description" content="<?php echo $descriptionCompilation ?>">
 
 <meta property="og:title" content="<?php echo $title ?>" />
-<meta property="og:type" content="album" />
-<meta property="og:locale" content="fr" />
+<meta property="og:type" content="music.album" />
+<meta property="og:locale" content="fr_fr" />
 <meta property="og:description" content="<?php echo $descriptionCompilation ?>" />
 <?php if ($compilation): ?>
 <meta property="og:image" content="<?php echo sprintf('http://empilements.incongru.org/compilations/%s/cover.gif', $compilation) ?>" />
