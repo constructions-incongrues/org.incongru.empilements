@@ -24,6 +24,9 @@ $('.play').click(function() {
 	SPAPI.start();
 	return false;
 });
+$('.track').click(function() {
+
+});
   </script>
 
   
