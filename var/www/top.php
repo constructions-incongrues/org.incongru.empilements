@@ -51,15 +51,9 @@ For optimal performance, use a custom Modernizr build: www.modernizr.com/downloa
 	<div class="container">
 		<div class="row">
 			<div class="span16">
-				<h1><a href=""><img src="img/header.png" title="Retourner à l'accueil" /></a></h1>
+				<h1><a href="index.php"><img src="img/header.png" title="Retourner à l'accueil" /></a></h1>
 				<p class="description">
 		Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.
-				</p>
-				<p>
-					Les voici, plus arbitraires que jamais :<br />
-<?php foreach ($compilationsSpec as $id => $spec): ?>
-	<a href="?c=<?php echo $id ?>" title="Écouter et télécharger la compilation <?php echo $spec['manifest']['title'] ?>"><?php echo $spec['manifest']['title'] ?></a> |
-<?php endforeach; ?>
 				</p>
 			</div>
 		</div><!-- /div.row -->

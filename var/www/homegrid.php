@@ -1,9 +1,14 @@
-<div class="row">
-<?php $limit = 4 ?>
+<?php $i = 0 ?>
 <?php foreach ($compilationsSpec as $name => $spec): ?>
-	<div class="span4">
-		<img src="<?php echo sprintf('compilations/%s/thumb_240.gif', $name)?>" />
-	<?php echo $spec['manifest']['title'] ?>
+	<?php if ($i % 4 == 0): ?>
+<div class="row">
+	<?php endif; ?>
+	<div class="span4" style="text-align:center;">
+		<a href="?c=<?php echo $name?>"><img src="<?php echo sprintf('compilations/%s/thumb.gif', $name)?>" /></a>
+	<p><a href="?c=<?php echo $name?>"><?php echo $spec['manifest']['title'] ?></a></p>
 	</div>
-<?php endforeach; ?> 
+	<?php $i++ ?>
+	<?php if ($i % 4 == 0): ?>
 </div>
+	<?php endif; ?>
+<?php endforeach; ?> 
