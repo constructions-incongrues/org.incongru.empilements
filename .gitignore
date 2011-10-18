@@ -1,2 +1,3 @@
 .project
 var/www/compilations/*/tracks/*
+.settings
