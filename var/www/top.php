@@ -1,16 +1,3 @@
-<?php
-require(dirname(__FILE__).'/lib.php');
-$compilationsSpec = get_compilations_specs(dirname(__FILE__).'/compilations');
-$compilation = filter_input(INPUT_GET, 'c'); 
-$title = 'Empilements';
-$descriptionCompilation = "Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.";
-if ($compilation) {
-	$infos = $compilationsSpec[$compilation]['manifest'];
-	$title = $compilationsSpec[$compilation]['title'];
-	$tracks = $compilationsSpec[$compilation]['tracks'];
-	$descriptionCompilation = $compilationsSpec[$compilation]['description'];
-}
-?>
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
