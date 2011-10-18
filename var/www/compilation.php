@@ -6,7 +6,8 @@
 			</a>
 		</h2>
 		<p class="links">
-			⇃ <a href="download.php?c=<?php echo $compilation ?>">Télécharger</a> ⇂
+			<a href="download.php?c=<?php echo $compilation ?>">Télécharger</a> ⇃ 
+			<a href="" class="play">Écouter</a> ♪
 		</p>
 	</div>
 </div>
