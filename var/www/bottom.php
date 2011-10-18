@@ -18,8 +18,20 @@
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
 <?php if (isset($compilation)): ?>
-  <script type="text/javascript" src="http://o.aolcdn.com/os_merge/?file=/streampad/sp-player.js&file=/streampad/sp-player-other.js&expsec=86400&ver=11"></script>
-<?php endif; ?>
+  <script type="text/javascript" src="http://o.aolcdn.com/os_merge/?file=/streampad/sp-player.js&file=/streampad/sp-player-other.js&expsec=86400&ver=11&clicktext=♪&showplaylist=true"></script>
+  <script>
+$('.play').click(function() {
+	SPAPI.start();
+	return false;
+});
+$('.track').click(function() {
+
+});
+  </script>
+
+  
+  
+  <?php endif; ?>
   <!-- end scripts-->
 
 	

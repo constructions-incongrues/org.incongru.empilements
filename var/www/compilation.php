@@ -6,7 +6,8 @@
 			</a>
 		</h2>
 		<p class="links">
-			⇃ <a href="download.php?c=<?php echo $compilation ?>">Télécharger</a> ⇂
+			<a href="download.php?c=<?php echo $compilation ?>">Télécharger</a> ⇃ 
+			<a href="" class="play">Écouter</a> ♪
 		</p>
 	</div>
 </div>
@@ -14,10 +15,8 @@
 	<div class="span16">
 		<h3>À Propos</h3>
 		<ul>
-			<li>Date : <?php echo $infos['date'] ?>
-			</li>
-			<li>Selector(s) : <?php echo $infos['authors'] ?>
-			</li>
+			<li>Date : <?php echo $infos['date'] ?></li>
+			<li>Selector(s) : <?php echo $infos['authors'] ?></li>
 		</ul>
 	</div>
 </div>
@@ -27,7 +26,7 @@
 		<ol>
 <?php foreach ($tracks as $track): ?>
 			<li>
-				<a href="<?php echo sprintf('compilations/%s/tracks/%s', $compilation, basename($track)) ?>"><?php echo preg_replace('/^\d\d - (.*)$/', '${1}', basename($track, '.mp3')) ?></a>
+				<a class="track" href="<?php echo sprintf('compilations/%s/tracks/%s', $compilation, basename($track)) ?>"><?php echo preg_replace('/^\d\d - (.*)$/', '${1}', basename($track, '.mp3')) ?></a>
 			</li>
 <?php endforeach; ?>
 		</ol>
