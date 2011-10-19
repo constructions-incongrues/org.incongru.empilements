@@ -34,7 +34,7 @@ More info: h5bp.com/b/378 -->
   <link href='http://fonts.googleapis.com/css?family=Nova+Slim' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/empilements.css">
+  <link rel="stylesheet" href="css/empilements.css?v=<?php echo time() ?>">
   <!-- end CSS-->
 
 <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
