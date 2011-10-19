@@ -5,3 +5,4 @@ h2 {text-align:center;}
 p, img {text-align:center;}
 p.description {font-size:1.5em;margin-top:1em;margin-bottom:1em;padding:1.5em;text-align:center;line-height:1.3em;}
 p.credits {font-size:0.7em;}
+h1#header {margin-top:0;}

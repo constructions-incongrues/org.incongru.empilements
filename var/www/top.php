@@ -51,7 +51,7 @@ For optimal performance, use a custom Modernizr build: www.modernizr.com/downloa
 	<div class="container">
 		<div class="row">
 			<div class="span16">
-				<h1><a href="index.php"><img src="img/header.png" title="Retourner à l'accueil" /></a></h1>
+				<h1 id="header"><a href="index.php"><img src="img/header.png" title="Retourner à l'accueil" /></a></h1>
 				<p class="description">
 		Aux fils de nos agapes, à la lueur d'un songe insomniaque, depuis les tréfonds de la nuit, le besoin impérieux de constituer des compilations musicales se fait parfois sentir.
 				</p>
