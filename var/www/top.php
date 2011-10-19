@@ -21,6 +21,8 @@ More info: h5bp.com/b/378 -->
 <meta property="og:description" content="<?php echo $descriptionCompilation ?>" />
 <?php if ($compilation): ?>
 <meta property="og:image" content="<?php echo sprintf('http://empilements.incongru.org/compilations/%s/cover.gif', $compilation) ?>" />
+<?php else: ?>
+<meta property="og:image" content="http://empilements.incongru.org/img/header.png" />
 <?php endif; ?>
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
