@@ -13,6 +13,11 @@
 </div>
 <div class="row">
 	<div class="span16">
+		<p class="links">↽ <a href="index.php">Voir les autres compilations</a></p>
+	</div>
+</div>
+<div class="row">
+	<div class="span16">
 		<h3>À Propos</h3>
 		<ul>
 			<li>Date : <?php echo $infos['date'] ?></li>
