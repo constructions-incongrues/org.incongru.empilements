@@ -15,6 +15,7 @@ $contents = file_get_contents($pathZip);
 unlink($pathZip);
 header('Content-Type: application/zip');
 header('Content-Length:'.strlen($contents));
-header('Content-Disposition:attachment;filename='.sprintf('%s.zip', $infos['title']));
+header('Content-Disposition:attachment;filename='.sprintf('empilements-%s.zip', $compilation));
 echo $contents;
+unset($contents);
 ?>
