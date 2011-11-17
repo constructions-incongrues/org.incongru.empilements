@@ -2,7 +2,7 @@
 		<div class="span16">
 			<hr style="clear:both;" />
 			<p>N'hésitez surtout pas à nous <a href="mailto:empilements@incongru.org">soumettre</a> vos compilations !</p>
-			<p class="credits">Ce projet est <a href="https://github.com/contructions-incongrues/empilements">développé</a> par <a href="http://www.constructions-incongrues.net">Constructions Incongrues</a> et hébergé par <a href="http://www.pastis-hosting.net">Pastis Hosting</a>. <br />Le logo a été réalisé par <a href="http://cobrafoutre.tumblr.com">Goupil Acnéique</a><br />Être tenu au courant des nouveautés : <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a> | <a href="http://feedburner.google.com/fb/a/mailverify?uri=empilements-incongrus&amp;loc=fr_FR">Email</a></p>
+			<p class="credits">Ce projet est <a href="https://github.com/contructions-incongrues/empilements">développé</a> par <a href="http://www.constructions-incongrues.net">Constructions Incongrues</a> et hébergé par <a href="http://www.pastis-hosting.net">Pastis Hosting</a>. <br />Le logo a été réalisé par <a href="http://cobrafoutre.tumblr.com">Goupil Acnéique</a><br />Être tenu au courant des nouveautés : <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a> | <a href="http://feedburner.google.com/fb/a/mailverify?uri=empilements-incongrus&amp;loc=fr_FR">Email</a> | <a href="http://www.facebook.com/empilements" title="Empilements sur Facebook">Facebook</a></p>
 			<br /><br /><br /><br /><br /><br />
 		</div>
 	</div>
