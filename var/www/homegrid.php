@@ -2,7 +2,7 @@
 <?php foreach ($compilationsSpec as $name => $spec): ?>
 	<?php if ($spec['manifest']['is_enabled'] != true): continue; endif; ?>
 	<?php if ($i % 4 == 0): ?>
-<div class="row">
+<div class="row grid">
 	<?php endif; ?>
 	<div class="span4" style="text-align:center;">
 		<a href="?c=<?php echo $name?>"><img src="<?php echo sprintf('compilations/%s/thumb.gif', $name)?>" /></a>
