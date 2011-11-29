@@ -1,5 +1,6 @@
 <?php $i = 0 ?>
 <?php foreach ($compilationsSpec as $name => $spec): ?>
+	<?php if ($spec['manifest']['is_enabled'] != true): continue; endif; ?>
 	<?php if ($i % 4 == 0): ?>
 <div class="row">
 	<?php endif; ?>
