@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="opt/incongrupack/bin"/>
+	<buildpathentry kind="src" path="opt/incongrupack/src/Net/ConstructionsIncongrues"/>
+	<buildpathentry kind="src" path="var/www"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

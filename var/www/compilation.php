@@ -6,7 +6,7 @@
 			</a>
 		</h2>
 		<p class="links">
-			<a href="download.php?c=<?php echo $compilation ?>">Télécharger</a> ⇃ 
+			<a href="download.php?c=<?php echo $compilation ?>" onClick="javascript: _gaq.push(['_trackPageview', '/downloads/<?php echo $compilation ?>']);">Télécharger</a> ⇃ 
 			<a href="" class="play">Écouter</a> ♪
 		</p>
 	</div>
@@ -31,7 +31,7 @@
 		<ol>
 <?php foreach ($tracks as $track): ?>
 			<li>
-				<a class="track" href="<?php echo sprintf('compilations/%s/tracks/%s', $compilation, basename($track)) ?>"><?php echo preg_replace('/^\d\d - (.*)$/', '${1}', basename($track, '.mp3')) ?></a>
+				<a class="track" href="<?php echo sprintf('compilations/%s/tracks/%s', $compilation, rawurlencode(basename($track))) ?>"><?php echo preg_replace('/^\d\d - (.*)$/', '${1}', basename($track, '.mp3')) ?></a>
 			</li>
 <?php endforeach; ?>
 		</ol>
