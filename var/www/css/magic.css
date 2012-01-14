@@ -13,7 +13,7 @@ background-repeat:repeat-x;
 		margin-left:-600px;		
 		transition: margin-left;
 		transition-timing-function: ease-in;
-		transition-duration: 250ms;
+		transition-duration: 500ms;
 	}
 	.release:hover .details{
 		margin-left:0;
