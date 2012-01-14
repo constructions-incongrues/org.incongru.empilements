@@ -46,7 +46,7 @@ h2.go{font-weight:800;font-size:3em;text-shadow:2px 2px 2px #000;text-transform:
 h2.go:hover {animation: rumble .0220s infinite linear;}.footer p{color:#FFF;font-size:1.1em;padding:0 5px;}
 .footer a{color:#f357a0;font-weight:500;text-decoration:none;}
 .footer a:hover {color:#FFF;}
-.contributor{color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:600;text-transform:uppercase;text-shadow:1px 2px 2px #000;}
+.contributor{color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:600;text-transform:uppercase;text-shadow:1px 2px 2px #000;margin-bottom:-10px;}
 .releasename{color:#f357a0;font-family:'Terminal Dosis', sans-serif;font-size:2em;font-weight:800;text-transform:uppercase;text-shadow:1px 2px 2px #000;margin-top:-10px;}
 .contributorcatalog{color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:700;text-transform:uppercase;text-shadow:1px 2px 2px #000;}
 .releasenamecatalog{color:#f357a0;font-family:'Terminal Dosis', sans-serif;font-size:1.6em;font-weight:700;text-transform:uppercase;text-shadow:1px 2px 2px #000;margin-top:-10px;}
@@ -59,15 +59,6 @@ ol{color:#f357a0;font-size:1.4em;margin-bottom:2em;}
 .playlist li:hover {transform:scale(1.05);}
 .nav-1 a:hover,.pink,.playlist a:hover{color:#f357a0;}
 
-
-
-
-.artwork img:hover 
-{opacity: .5;
-transition: opacity;
-transition-timing-function: ease-out;
-transition-duration: 500ms;
-} 
 
 .descr:hover 
 {
