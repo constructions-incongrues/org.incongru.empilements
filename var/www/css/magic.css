@@ -1,0 +1,39 @@
+.release{
+position:relative;
+width:620px;
+margin-left:0;
+background-image:url(../pics/pattern-release-catalog.png);
+background-repeat:repeat-x;
+}
+	.release .details{
+		opacity: .9;
+		position:absolute;
+		top:0;
+		left:0;
+		margin-left:-600px;		
+		transition: margin-left;
+		transition-timing-function: ease-in;
+		transition-duration: 250ms;
+	}
+	.release:hover .details{
+		margin-left:0;
+	}
+	
+	.box{
+		float:left;
+		margin:0px 10px 10px 10px;
+		height:125px;
+		width:600px;
+		overflow:hidden;
+	}
+	.details{
+		height:100px;
+		width:600px;
+		background:#000;
+		text-align:center;
+		color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:700;text-transform:uppercase;
+	}
+	
+	.details a {color:#FFF; text-decoration:none;}
+
+.release img{float:left;margin-right:20px;}

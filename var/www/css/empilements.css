@@ -1,10 +1,78 @@
-body {font-family:'Comfortaa';}
-h1, h2, h3, h4, h5, h6 {font-family:'Nova Slim';}
-h1 {text-align:center;margin-top:1em;margin-bottom:1em;}
-h2 {text-align:center;}
-p, img {text-align:center;}
-p.description {font-size:1.5em;margin-top:1em;margin-bottom:1em;padding:1.5em;text-align:center;line-height:1.3em;}
-p.credits {font-size:0.7em;}
-h1#header {margin-top:0;}
-.grid img {opacity:0.9;}
-.grid img:hover {opacity:1;}
+/*
+ * This file is part of Musiques Incongrues.
+ *
+ * Musiques Incongrues is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Musiques Incongrues is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Musiques Incongrues.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+body{background-color:#2e2f34;background-image:url(../pics/pattern.png);background-repeat:repeat-x;font-family:'Terminal Dosis', sans-serif;}
+.bgfix{height:29px;max-width:20px;background-color:#2e2f34;color:#2e2f34;}
+.logo{position:relative;z-index:2;}
+ul.nav-1{margin-top:10px;}
+.nav-1 li{list-style-type:none;background-color:#5b5b67;font-size:1.4em;padding:5px;margin-bottom:10px;text-align:right;}
+.nav-1 img{padding-left:5px;margin-top:-5px;}
+.nav-1 a{color:#FFF;font-weight:700;text-transform:uppercase;text-decoration:none;}
+.nav-1 li:hover {transform:scale(1.03);}
+.grid_4{height:100%;margin:0 45px 0 20px;}
+.grid_8{margin-right:45px;}
+.grid_6{margin:0 0 -38px;}
+.navbar{width:220px!important;}
+.man{margin-left:-20px;background-image:url("../pics/navbar/man.png");background-repeat:no-repeat;width:350px;padding-top:170px;padding-bottom:5px;margin-top:-40px;}
+.hand{margin-left:-20px;position:absolute;z-index:2000;}
+.submit{color:#FFF;font-weight:600;font-size:1.1em;text-transform:uppercase;text-shadow:1px 1px 2px #000;margin-left:70px;}
+p.descr{transform:rotate(-8deg);margin-top:20px;margin-left:-16px;padding:10px 2px 0 25px;width:180px;height:170px;color:#FFF;font-weight:600;text-transform:uppercase;letter-spacing:0.3px;font-size:1.1em;}
+.go,.submit{transform:rotate(-10deg);}
+.triangle{border-color:transparent transparent #44464e;border-style:solid;border-width:0 0 40px 220px;float:right;margin-top:-35px;}
+.footer{width:220px;height:88%;position:absolute;}
+h2.go{font-weight:800;font-size:3em;text-shadow:2px 2px 2px #000;text-transform:uppercase;text-align:center;}
+@keyframes rumble {
+    0% {transform: rotate(0deg);}
+    25% {-webkit-transform: translate(2px, 0px) rotate(-1deg);}
+    50% {transform: translate(0px, -2px) rotate(0deg);}
+    75% {transform: translate(-2px, 0px) rotate(1deg);}
+    100% {transform: translate(0px, 2px) rotate(0deg);} 
+}
+h2.go:hover {animation: rumble .0220s infinite linear;}.footer p{color:#FFF;font-size:1.1em;padding:0 5px;}
+.footer a{color:#f357a0;font-weight:500;text-decoration:none;}
+.footer a:hover {color:#FFF;}
+.contributor{color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:600;text-transform:uppercase;text-shadow:1px 2px 2px #000;}
+.releasename{color:#f357a0;font-family:'Terminal Dosis', sans-serif;font-size:2em;font-weight:800;text-transform:uppercase;text-shadow:1px 2px 2px #000;margin-top:-10px;}
+.contributorcatalog{color:#FFF;font-family:'Terminal Dosis', sans-serif;font-size:1.2em;font-weight:700;text-transform:uppercase;text-shadow:1px 2px 2px #000;}
+.releasenamecatalog{color:#f357a0;font-family:'Terminal Dosis', sans-serif;font-size:1.6em;font-weight:700;text-transform:uppercase;text-shadow:1px 2px 2px #000;margin-top:-10px;}
+.cataloglink{width:140px; text-align:right; float:right;font-family:'Terminal Dosis', sans-serif; color:#FFF;font-size:1.2em;font-weight:500;margin-top:12px;}
+.cataloglink:hover {background-image:url(../pics/pattern-release-catalog.png);
+background-repeat:repeat-x;}.cataloglink a {color:#FFF;text-decoration:none;}
+.cataloglink a:hover {color:#f357a0;}.artwork{background-color:#42454e;text-align:center;padding:10px;}
+ol{color:#f357a0;font-size:1.4em;}
+.playlist a{color:#FFF;font-weight:600;text-decoration:none;font-family:'Terminal Dosis', sans-serif;font-size:0.8em;}
+.playlist li:hover {transform:scale(1.05);}
+.nav-1 a:hover,.pink,.playlist a:hover{color:#f357a0;}
+
+
+
+
+.artwork img:hover 
+{opacity: .5;
+transition: opacity;
+transition-timing-function: ease-out;
+transition-duration: 500ms;
+} 
+
+.descr:hover 
+{
+transition-timing-function: ease-in;
+transition-duration: 150ms;
+transform:rotate(-1deg);
+width:229px;
+height:130px;		}

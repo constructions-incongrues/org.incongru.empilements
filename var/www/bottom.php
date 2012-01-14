@@ -1,17 +1,10 @@
-	<div class="row">
-		<div class="span16">
-			<hr style="clear:both;" />
-			<p>N'hésitez surtout pas à nous <a href="mailto:empilements@incongru.org">soumettre</a> vos compilations !</p>
-			<p class="credits">Ce projet est <a href="https://github.com/contructions-incongrues/empilements">développé</a> par <a href="http://www.constructions-incongrues.net">Constructions Incongrues</a> et hébergé par <a href="http://www.pastis-hosting.net">Pastis Hosting</a>. <br />Le logo a été réalisé par <a href="http://cobrafoutre.tumblr.com">Goupil Acnéique</a><br />Être tenu au courant des nouveautés : <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a> | <a href="http://feedburner.google.com/fb/a/mailverify?uri=empilements-incongrus&amp;loc=fr_FR">Email</a> | <a href="http://www.facebook.com/empilements" title="Empilements sur Facebook">Facebook</a></p>
-			<br /><br /><br /><br /><br /><br />
-		</div>
-	</div>
-	</div>
+	</div> <!-- #container -->
+	
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 
   <!-- scripts concatenated and minified via ant build script-->
@@ -28,9 +21,6 @@ $('.track').click(function() {
 
 });
   </script>
-
-  
-  
   <?php endif; ?>
   <!-- end scripts-->
 
