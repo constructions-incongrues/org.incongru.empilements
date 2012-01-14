@@ -54,7 +54,7 @@ h2.go:hover {animation: rumble .0220s infinite linear;}.footer p{color:#FFF;font
 .cataloglink:hover {background-image:url(../pics/pattern-release-catalog.png);
 background-repeat:repeat-x;}.cataloglink a {color:#FFF;text-decoration:none;}
 .cataloglink a:hover {color:#f357a0;}.artwork{background-color:#42454e;text-align:center;padding:10px;}
-ol{color:#f357a0;font-size:1.4em;}
+ol{color:#f357a0;font-size:1.4em;margin-bottom:2em;}
 .playlist a{color:#FFF;font-weight:600;text-decoration:none;font-family:'Terminal Dosis', sans-serif;font-size:0.8em;}
 .playlist li:hover {transform:scale(1.05);}
 .nav-1 a:hover,.pink,.playlist a:hover{color:#f357a0;}

@@ -10,8 +10,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title><?php echo $title ?></title>
+
 	<meta name="description" content="<?php echo $descriptionCompilation ?>">
-	
 	<meta property="og:title" content="<?php echo $title ?>" />
 	<meta property="og:type" content="music.album" />
 	<meta property="og:locale" content="fr_fr" />
@@ -21,6 +21,8 @@
 	<?php else: ?>
 	<meta property="og:image" content="http://empilements.incongru.org/img/header.png" />
 	<?php endif; ?>
+
+	<link rel="shortcut icon" type="image/png" href="empilements_16x16.png"/>
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -81,7 +83,7 @@
 								
 <div class="footer grad-2">
 	
-<h2 class="go"><a href="empilements@incongru.org">Go! &gt;&gt;&gt;</a></h2>
+<h2 class="go"><a href="mailto:empilements@incongru.org">Go! &gt;&gt;&gt;</a></h2>
 <p>	
 Ce projet est développé par 
 <a href="">Constructions Incongrues </a>
