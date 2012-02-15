@@ -11,7 +11,7 @@
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
 <?php if (isset($compilation)): ?>
-  <script type="text/javascript" src="http://o.aolcdn.com/os_merge/?file=/streampad/sp-player.js&file=/streampad/sp-player-other.js&expsec=86400&ver=11&bgcolor=#000000&trackcolor=#f357a0&clicktext=Cliquez%20ici%20pour%20écouter%20la%20compilation&progressbackcolor=44464e&btncolor=white-gray"></script>
+  <script type="text/javascript" src="http://o.aolcdn.com/os_merge/?file=/streampad/sp-player.js&file=/streampad/sp-player-other.js&expsec=86400&ver=11&bgcolor=000000&trackcolor=f357a0&clicktext=Cliquez%20ici%20pour%20écouter%20la%20compilation&progressbackcolor=44464e&btncolor=white-gray"></script>
   <script>
 $('.play').click(function() {
 	SPAPI.start();

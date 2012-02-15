@@ -8,6 +8,10 @@ mp3gain -r -k -t $1/tracks/*.mp3
 echo ">> Define ID3 tags"
 ./bin/release-tag $RELEASE
 
+echo ">> Generat thumbs"
+convert $RELEASE/source.jpg -resize 200x100^ -extent 200x100 $RELEASE/thumb_100_200.gif
+convert $RELEASE/source.jpg -resize 350x350^ -extent 350x350 $RELEASE/cover.gif
+
 echo ">> Push to github"
 git add $RELEASE && git commit -m "Updates to compilation `basename $RELEASE`" && git push origin master
 /usr/bin/rsync $ARGS --progress --links -avzC -e ssh "$RELEASE" org_incongru@empilements.incongru.org:/srv/bouteille_data/plesk-vhosts/incongru.org/subdomains/empilements/httpdocs/compilations/`basename $RELEASE`
