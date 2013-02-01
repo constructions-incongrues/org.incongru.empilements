@@ -26,6 +26,9 @@ foreach ($compilations as $compilation) {
 	// Gather compilation informations
 	$pathManifest = sprintf('%s/compilations/%s/manifest.ini', dirname(__FILE__), $compilation);
 	$manifest = parse_ini_file($pathManifest);
+	if ($manifest['is_enabled'] != true) {
+		continue;
+	}
 	$statManifest = stat($pathManifest);
 	if ($statManifest['mtime'] > $timestampNewest) {
 		$timestampNewest = $statManifest['mtime'];
