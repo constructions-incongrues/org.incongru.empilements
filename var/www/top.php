@@ -56,7 +56,7 @@
 <?php if ($compilation): ?> 
 <ul class="grid_6 nav-1">
 <li><a href="download.php?c=<?php echo $compilation ?>" onClick="javascript: _gaq.push(['_trackPageview', '/downloads/<?php echo $compilation ?>']);">Télécharger</a> <img src="pics/play.png" alt="" /></li>
-<li><a class="medialink play"><a href="" class="play">Ecouter</a><img src="pics/v.png" /></li>
+<li><a class="medialink play"><a href="" class="play">Écouter</a><img src="pics/v.png" /></li>
 </ul>
 <?php endif; ?>
 
@@ -77,13 +77,16 @@
 
 <p class="submit">N'hésitez surtout pas à <br/>nous soumettre vos <br/>compilations ! </p>
 
-<div class="triangle">
-								
-	</div>
+<div class="triangle"></div>
 								
 <div class="footer grad-2">
 	
 <h2 class="go"><a href="mailto:empilements@incongru.org">Go! &gt;&gt;&gt;</a></h2>
+
+<p>
+	<strong>Consulter le <a href="https://www.google.com/calendar/embed?src=3s3432r73c0k5scnvb6sruvp08%40group.calendar.google.com&amp;ctz=Europe/Paris">calendrier</a> des sorties</strong>
+</p>
+
 <p>	
 Ce projet est développé par 
 <a href="">Constructions Incongrues </a>
