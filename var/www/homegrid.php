@@ -17,7 +17,7 @@
 <?php endforeach; ?>
 </div>
 
-<h3>Toutes les compilations</h3>
+<h3>Toutes les compilations (<?php echo count($compilationsSpec) ?>)</h3>
 
 <div class="grid_8 ">
 <?php foreach ($compilationsSpec as $name => $spec): ?>
