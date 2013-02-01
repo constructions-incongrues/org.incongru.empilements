@@ -93,6 +93,10 @@ Ce projet est développé par
 et hébergé par <a href="">Pastis Hosting</a>
 </p>
 
+<p>
+Le code source est <a href="https://github.com/constructions-incongrues/empilements">diffusé</a> sous license <a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPLv3</a>.
+</p>
+
 <p>Design par <a href="http://www.blogdamned.com/">Goupil Acnéique</a></p>
 <p>Être tenu au courant des nouveautés <a href="http://feeds.feedburner.com/empilements-incongrus">RSS</a> | <a href="http://feedburner.google.com/fb/a/mailverify?uri=empilements-incongrus&loc=fr_FR">Email</a> | <a href="http://www.facebook.com/empilements">Facebook</a></p>
 </div>
