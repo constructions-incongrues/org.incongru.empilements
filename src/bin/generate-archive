@@ -1,0 +1,37 @@
+#!/usr/bin/env php
+<?php
+// Sanity checks
+if (!isset($_SERVER['argv'][1])) {
+	throw new InvalidArgumentException('Please provide compilation name');
+}
+
+// Handle forcing
+$force = false;
+$options = getopt('', array('force'));
+if (isset($options['force'])) {
+	echo sprintf('[%s] Using force', date('r')), "\n";
+	$force = true;
+	$compilation = $_SERVER['argv'][2];
+} else {
+	$compilation = $_SERVER['argv'][1];
+}
+
+$pathZip = sprintf(__DIR__.'/../var/compilations/%s/empilements_%s.zip', $compilation, $compilation);
+echo sprintf('[%s] Generating archive for compilation "%s" in %s', date('r'), $compilation, realpath($pathZip)), "\n";
+if ($force || !file_exists($pathZip)) {
+	$tracks = glob(sprintf('%s/../var/compilations/%s/tracks/*.mp3', __DIR__, $compilation));
+	$infos = parse_ini_file(sprintf('%s/../var/compilations/%s/manifest.ini', __DIR__, $compilation));
+	$zip = new ZipArchive();
+	
+	$zip->open($pathZip, ZipArchive::CREATE);
+	foreach ($tracks as $track) {
+		$zip->addFile($track, sprintf('%s/%s', $infos['title'], basename($track)));
+	}
+	$zip->addFile(sprintf('%s/../var/compilations/%s/cover.gif', __DIR__, $compilation), sprintf('%s/cover.gif', $infos['title']));
+	$zip->addFile(sprintf('%s/../var/compilations/%s/manifest.ini', __DIR__, $compilation), sprintf('%s/manifest.ini', $infos['title']));
+	$zip->close();
+
+	echo sprintf('[%s] Archive successfully generated in "%s".', date('r'), realpath($pathZip)), "\n";
+} else {
+	echo sprintf('[%s] Archive already exists in "%s", skipping.', date('r'), realpath($pathZip)), "\n";
+}

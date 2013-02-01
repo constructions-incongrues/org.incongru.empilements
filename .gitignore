@@ -1,3 +1,11 @@
-.project
-var/www/compilations/*/tracks/*
-.settings
+# composer
+vendor/*
+
+# editors
+*.bak
+*~
+*.swp
+
+# empilements
+src/var/compilations/*/*.zip
+src/var/compilations/*/tracks/*

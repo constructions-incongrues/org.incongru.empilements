@@ -1,0 +1,47 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="grid_8 ">
+	<h1 class="contributor">| {{ infos.date }} <span class="pink">//</span> {{ infos.authors }}</h1>
+	<h2 class="releasename">{{ infos.title }}</h2>
+	
+	<p class="artwork"><img class="cover" src="{{ app.request.basepath }}/var/compilations/{{ compilation }}/cover.gif" /></p>
+	<ol class="playlist">
+{% for track in tracks %}
+		<li>
+			<a class="track" href="{{ track.url }}">{{ track.name }}</a>
+		</li>
+{% endfor %}
+	</ol>
+</div>
+{% endblock %}
+
+{% block streampad %}
+  <script type="text/javascript" src="http://o.aolcdn.com/os_merge/?file=/streampad/sp-player.js&amp;file=/streampad/sp-player-other.js&amp;expsec=86400&amp;ver=11&amp;bgcolor=000000&amp;trackcolor=f357a0&amp;clicktext=Cliquez%20ici%20pour%20écouter%20la%20compilation&amp;progressbackcolor=44464e&amp;btncolor=white-gray"></script>
+  <script>
+$('.play').click(function() {
+	SPAPI.start();
+	return false;
+});
+$('.track').click(function() {
+
+});
+  </script>
+{% endblock %}
+
+{% block compilationInteractions %}
+<ul class="grid_6 nav-1">
+<li><a href="{{ app.request.basepath }}/var/compilations/{{ compilation }}/empilements_{{ compilation }}.zip" onClick="javascript: _gaq.push(['_trackPageview', '/downloads/{{ compilation }}']);">Télécharger</a> <img src="{{ app.request.basepath }}/assets/pics/play.png" alt="" /></li>
+<li><a class="medialink play"><a href="" class="play">Écouter</a><img src="{{ app.request.basepath }}/assets/pics/v.png" /></li>
+</ul>
+{% endblock %}
+
+{% block metadata %}
+<meta name="description" content="{{ description }}">
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:type" content="music.album" />
+<meta property="og:locale" content="fr_fr" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:image" content="http://empilements.incongru.org/var/compilations/{{ compilation }}/cover.gif" />
+<meta property="og:image" content="http://empilements.incongru.org/img/header.png" />
+{% endblock %}

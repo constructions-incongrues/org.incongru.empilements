@@ -1,0 +1,16 @@
+{
+   "repositories": [
+        {
+            "type": "composer",
+            "url": "http://constructions-incongrues.github.com/packages"
+        }
+    ],
+    "require": {
+    	"constructions-incongrues/ananas-build-toolkit": "dev-master",
+        "silex/silex": "1.0.*",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/twig-bridge": "2.1.*",
+        "twig/extensions": "1.0.*@dev"
+    },
+    "minimum-stability": "dev"
+}

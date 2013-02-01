@@ -1,0 +1,46 @@
+{% extends "layout.twig" %}
+
+{% block metadata %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="fr_fr" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="og:image" content="http://empilements.incongru.org/img/header.png" />
+{% endblock %}
+
+{% block content %}
+<h3>À l'affiche</h3>
+
+<div class="grid8">
+{% for spec in compilationsSpec if spec.manifest.is_enabled %}
+	{% if spec.manifest.is_featured %}
+	<div class="release box featured">
+		<a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"><img src="{{ app.request.basepath }}/var/compilations/{{ spec.name }}/thumb_100_200.gif" /></a>
+		<h2 class="contributorcatalog">{{ spec.manifest.date }} <span class="pink">//</span> {{ spec.manifest.authors }}</h2>
+		<h1 class="releasenamecatalog">{{ spec.manifest.title| truncate(70) }}</h1>
+		<p class="cataloglink"><a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"> écouter</a> ♪  <a href="{{ app.request.basepath }}/var/compilations/empilements_{{ name }}.zip" onClick="javascript: _gaq.push(['_trackPageview', '/downloads/{{ spec.name }}']);" title="Télécharger la compilation">télécharger</a> </p>
+		<div class="details">
+			<p><a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"><span class="pink">Avec :</span> {{ spec.artists | join(', ') | truncate(250) }} ?></a></p>			
+		</div>
+	</div>
+	{% endif %}
+{% endfor %}
+</div>
+
+<h3>Toutes les compilations ({{ compilationsSpec|length }})</h3>
+
+<div class="grid_8 ">
+{% for spec in compilationsSpec if spec.manifest.is_enabled %}
+	<div class="release box">
+		<a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"><img src="{{ app.request.basepath }}/var/compilations/{{ spec.name }}/thumb_100_200.gif" /></a>
+		<h2 class="contributorcatalog">{{ spec.manifest.date }} <span class="pink">//</span> {{ spec.manifest.authors }}</h2>
+		<h1 class="releasenamecatalog">{{ spec.manifest.title| truncate(70) }}</h1>
+		<p class="cataloglink"><a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"> écouter</a> ♪  <a href="download.php?c={{ spec.name }}" onClick="javascript: _gaq.push(['_trackPageview', '/downloads/{{ spec.name }}']);" title="Télécharger la compilation">télécharger</a> </p>
+		<div class="details">
+			<p><a href="{{ url('compilation', {name: spec.name}) }}" title="Écouter la compilation"><span class="pink">Avec :</span> {{ spec.artists | join(', ') | truncate(250) }}</a></p>			
+		</div>
+	</div>
+{% endfor %}
+</div>
+{% endblock %}
