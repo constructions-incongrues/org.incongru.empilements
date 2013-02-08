@@ -1,14 +1,14 @@
 #!/bin/sh
 RELEASEID=$1
-cp -R etc/compilation-template var/www/compilations/$RELEASEID
-echo 'url="http://empilements.incongru.org/?c=$RELEASEID"' >> var/www/compilations/$RELEASEID/manifest.ini
-echo "Compilation directory layout was created in ./var/www/compilations/$RELEASEID"
+cp -R etc/compilation-template src/var/compilations/$RELEASEID
+echo 'url="http://empilements.incongru.org/?c=$RELEASEID"' >> src/var/compilations/$RELEASEID/manifest.ini
+echo "Compilation directory layout was created in ./src/var/compilations/$RELEASEID"
 echo ""
 echo "TODO before releasing your new compilation :"
-echo "- Fill compilation details in ./var/www/compilations/$RELEASEID/manifest.ini"
-echo "- Add tracks in ./var/www/compilations/$RELEASEID/tracks/"
+echo "- Fill compilation details in ./src/var/compilations/$RELEASEID/manifest.ini"
+echo "- Add tracks in ./src/var/compilations/$RELEASEID/tracks/"
 echo ""
 echo "Once your compilation is complete, please release it by issuing the following command :"
 echo ""
-echo "  ./bin/release-upload ./var/www/compilations/$RELEASEID/"
+echo "  ./bin/release-upload ./src/var/compilations/$RELEASEID/"
 echo ""
