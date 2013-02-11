@@ -2,6 +2,12 @@
     Options -MultiViews
 
     RewriteEngine On
+
+    # Backward compatibility
+    RewriteCond %{QUERY_STRING} ^c=(.*)$
+    RewriteRule ^(.*)$ %{REQUEST_URI}%1? [L,R=301]
+
+    # Silex
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
