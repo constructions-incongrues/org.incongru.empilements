@@ -6,9 +6,7 @@ TODO :
     * Erreurs en français, sans JSON => donc messages surchargeables
  * Support for downloading archive
  * Deviner le authors dans le sujet du mail : "<Titre de la compilation> par <liste des auteurs>"
+ * Support des anciennes url (?c=)
+ * https://github.com/zetacomponents/Feed/blob/master/src/feed.php
+ * 404
 
-To create a new compilation :
- - Open a terminal, go to project's root directory
- - Run : ./bin/release-init my-compilation-title
- - Follow instructions
- - You are done !

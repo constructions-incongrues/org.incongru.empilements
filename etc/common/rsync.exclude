@@ -1,0 +1,15 @@
+/.buildpath
+/.idea
+.gitignore
+.git
+*.mp3
+*.zip
+/tests
+/etc
+/composer.*
+/build.xml*
+*.bak
+*~
+/tests.php
+/vendor/constructions-incongrues/ananas-build-toolkit
+/src/public/var/compilations/*/tracks

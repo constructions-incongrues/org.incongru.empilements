@@ -14,9 +14,15 @@ function get_compilations_specs($directory)
         // Extract manifest data and playlists
         $compilationsSpec[$compilation] = array(
             'name'      => $compilation,
-            'manifest'  => parse_ini_file(sprintf('%s/../var/compilations/%s/manifest.ini', __DIR__, $compilation)),
-            'tracks'    => glob(sprintf('%s/../var/compilations/%s/tracks/*.mp3', __DIR__, $compilation)),
+            'manifest'  => parse_ini_file(
+                sprintf('%s/../public/var/compilations/%s/manifest.ini', __DIR__, $compilation)
+            ),
+            'tracks'    => glob(sprintf('%s/../public/var/compilations/%s/tracks/*.mp3', __DIR__, $compilation)),
         );
+
+        if (!$compilationsSpec[$compilation]['tracks']) {
+            continue;
+        }
 
         // Generate compilation artists list
         $artists = array();

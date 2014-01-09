@@ -6,6 +6,7 @@ use Alchemy\Zippy\Zippy;
 use ConstructionsIncongrues\Incongrukit\Collection\FileCollection;
 use Intervention\Image\Image;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Finder\Finder;
 use Symfony\Component\Process\Process;
 
 class EmpilementCollection extends FileCollection
@@ -229,6 +230,35 @@ class EmpilementCollection extends FileCollection
         $this->logger->notice('[processing] Collection processing succeeded', array('collection' => $this->getId()));
 
         return true;
+    }
+
+    public function deploy($destination)
+    {
+        // Destination directory
+        $destination = $destination.'/'.$this->parameters['slug'];
+        parent::deploy($destination);
+
+        // Deploy files
+        $this->filesystem->mkdir($destination.'/tracks');
+        $finder = new Finder();
+
+        // Files in folder root
+        $filesRoot = $finder
+            ->name('cover.gif')
+            ->name('thumb_100_200.gif')
+            ->name('source.jpg')
+            ->name('manifest.json')
+            ->name('*.zip')
+            ->in($this->path);
+        foreach ($filesRoot as $file) {
+            $this->filesystem->copy($file->getPathname(), $destination.'/'.$file->getBasename());
+        }
+
+        // Files in tracks directory
+        $filesMp3 = $finder->name('*.mp3')->in($this->path);
+        foreach ($filesMp3 as $file) {
+            $this->filesystem->copy($file->getPathname(), $destination.'/tracks/'.$file->getBasename());
+        }
     }
 
     /**
