@@ -1,11 +1,12 @@
 # composer
-vendor/*
+/vendor
 
 # editors
 *.bak
 *~
 *.swp
+/.idea
 
 # empilements
-src/var/compilations/*/*.zip
-src/var/compilations/*/tracks/*
+/src/var/compilations/*/*.zip
+/src/var/compilations/*/tracks/*

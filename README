@@ -1,5 +1,14 @@
+TODO :
+ * Page de documentation du système
+ * Accès à une preview de la compilation
+ * Erreurs compréhensibles
+    * Différencier erreurs et exceptions
+    * Erreurs en français, sans JSON => donc messages surchargeables
+ * Support for downloading archive
+ * Deviner le authors dans le sujet du mail : "<Titre de la compilation> par <liste des auteurs>"
+
 To create a new compilation :
  - Open a terminal, go to project's root directory
- - Run : ./bin/release-init my-compilation-title 
+ - Run : ./bin/release-init my-compilation-title
  - Follow instructions
  - You are done !

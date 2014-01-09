@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo apt-get install id3v2 mp3gain
