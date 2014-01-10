@@ -39,15 +39,17 @@ class EmpilementCollection extends FileCollection
         parent::verify();
 
         // Check image size
+        $widthMin = 300;
+        $heightMin = 300;
         $specImage = getimagesize($this->getGroup('image')['files'][0]->getPathname());
-        if ($specImage[0] < 300 || $specImage[1] < 300) {
+        if ($specImage[0] < $widthMin || $specImage[1] < $heightMin) {
             $this->errors[] = sprintf(
                 'Wrong image size %s',
                 json_encode(
                     array(
-                        'widthMin'    => 300,
+                        'widthMin'    => $widthMin,
                         'widthImage'  => $specImage[0],
-                        'heightMin'   => 300,
+                        'heightMin'   => $heightMin,
                         'heightImage' => $specImage[1]
                     ),
                     JSON_UNESCAPED_SLASHES
@@ -203,7 +205,7 @@ class EmpilementCollection extends FileCollection
         }
 
         // Create archive
-        $pathArchive = sprintf('%s/%s.zip', $this->path, $this->parameters['slug']);
+        $pathArchive = sprintf('%s/empilements_%s.zip', $this->path, $this->parameters['slug']);
         $this->logger->info(
             '[processing] Creating archive',
             array('collection' => $this->getId(), 'path' => $pathArchive, 'contents' => $archiveMembers)
@@ -240,9 +242,9 @@ class EmpilementCollection extends FileCollection
 
         // Deploy files
         $this->filesystem->mkdir($destination.'/tracks');
-        $finder = new Finder();
 
         // Files in folder root
+        $finder = new Finder();
         $filesRoot = $finder
             ->name('cover.gif')
             ->name('thumb_100_200.gif')
@@ -255,6 +257,7 @@ class EmpilementCollection extends FileCollection
         }
 
         // Files in tracks directory
+        $finder = new Finder();
         $filesMp3 = $finder->name('*.mp3')->in($this->path);
         foreach ($filesMp3 as $file) {
             $this->filesystem->copy($file->getPathname(), $destination.'/tracks/'.$file->getBasename());
