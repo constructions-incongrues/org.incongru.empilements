@@ -10,4 +10,7 @@
     # Silex
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    # Empilements
+    php_value newrelic.appname "empilements.incongru.org"
 </IfModule>
