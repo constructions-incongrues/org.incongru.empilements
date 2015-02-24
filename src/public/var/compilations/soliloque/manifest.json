@@ -1,0 +1,92 @@
+{
+    "authors": [
+        "Jacques Cochise"
+    ],
+    "date": "2011-12-20",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "LES SURFS",
+            "title": "If you please"
+        },
+        "2": {
+            "track": "02",
+            "artist": "FLIGHT OF THE CONCHORDS",
+            "title": "Robots"
+        },
+        "3": {
+            "track": "03",
+            "artist": "CSOKOLOM",
+            "title": " Kören Chave"
+        },
+        "4": {
+            "track": "04",
+            "artist": "MOURNING NOISE",
+            "title": "Fighting chance"
+        },
+        "5": {
+            "track": "05",
+            "artist": "BLENDER",
+            "title": "Sweet Suicide"
+        },
+        "6": {
+            "track": "06",
+            "artist": "NIGHT FEVER",
+            "title": "Twilight zone"
+        },
+        "7": {
+            "track": "07",
+            "artist": "BLACK BUG",
+            "title": "Run"
+        },
+        "8": {
+            "track": "08",
+            "artist": "DELS",
+            "title": "Capsize feat. joe goddard and roots manuva"
+        },
+        "9": {
+            "track": "09",
+            "artist": "SPARKS",
+            "title": "Tryouts For The Human Race"
+        },
+        "10": {
+            "track": "10",
+            "artist": "ULRICH",
+            "title": "Message Pirate"
+        },
+        "11": {
+            "track": "11",
+            "artist": "BRAND IMAGE",
+            "title": "All Your Loving"
+        },
+        "12": {
+            "track": "12",
+            "artist": "KIM WILDE",
+            "title": "House of Salome"
+        },
+        "13": {
+            "track": "13",
+            "artist": "LOLITA",
+            "title": "Joli Garcon"
+        },
+        "14": {
+            "track": "14",
+            "artist": "DAVE CLARK feat. CHICKS ON SPEED",
+            "title": "What Was Her Name"
+        },
+        "15": {
+            "track": "15",
+            "artist": "JACQUES COCHISE",
+            "title": "Plaquage"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Unknown Artist",
+            "title": "CHRONOLOGIE DU HARDROCK VITE FAIT"
+        }
+    },
+    "title": "Soliloque",
+    "url": "http://empilements.incongru.org?c=soliloque"
+}

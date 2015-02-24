@@ -1,0 +1,72 @@
+{
+    "authors": [
+        "Le Professeur M."
+    ],
+    "date": "2012-02-22",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Rete 105",
+            "title": "Vacanze"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Pino D'angio",
+            "title": "Donna In Costruzione"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Aldo Maccione",
+            "title": "Le Dragueur Classe"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Gino Palatino",
+            "title": "Vendetta A Parrigi"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Johnny Junior",
+            "title": "Bank Robbery Rap"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Band Of Jocks",
+            "title": " Let's All Dance"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Boomerang Club Band",
+            "title": "Deejay Superstar (Extended)"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Fassari",
+            "title": "Romadinotte"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Gee Gee & Gym Band",
+            "title": "Majic Kaboolal"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Dj Look ",
+            "title": " Capita"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Marzio Dance DJ",
+            "title": "Rap-O-Hush _Another Version"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Radio Band",
+            "title": "Radio Rap "
+        }
+    },
+    "title": "Rap Rital",
+    "url": "http://empilements.incongru.org?c=rap-rital"
+}

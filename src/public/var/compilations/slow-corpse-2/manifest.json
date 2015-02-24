@@ -1,0 +1,62 @@
+{
+    "authors": [
+        "Logan"
+    ],
+    "date": "2013-02-04",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Slowdive",
+            "title": "Souvlaki Space Station"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Loop",
+            "title": "Straight To Your Heart"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Oneohtrix Point Never",
+            "title": "Submersible"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Windsor For The Derby",
+            "title": "Seven"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Current 93",
+            "title": "All The Pretty Little Horses (feat. Nick Cave)"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Olafur Arnalds",
+            "title": "Fyrsta"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Ride",
+            "title": "Cool Your Boots"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Pale Saints",
+            "title": "Sight Of You"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Spectrum",
+            "title": "How You Satisfy Me"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Eïnsturzende Neubauten",
+            "title": "The Garden"
+        }
+    },
+    "title": "Slow Corpse 2",
+    "url": "http://empilements.incongru.org?c=slow-corpse-2"
+}

@@ -1,0 +1,57 @@
+{
+    "authors": [
+        "Yvan&Lendl"
+    ],
+    "date": "2013-02-08",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "hirono nishiyama",
+            "title": "lampelstelthkin"
+        },
+        "2": {
+            "track": "02",
+            "artist": "nobukazu takemura",
+            "title": "tuirirukabinbon"
+        },
+        "3": {
+            "track": "03",
+            "artist": "taisuke matsuo",
+            "title": "apirge"
+        },
+        "4": {
+            "track": "04",
+            "artist": "hirono nishiyama",
+            "title": "pied piper"
+        },
+        "5": {
+            "track": "05",
+            "artist": "aki tsuyuko",
+            "title": "zou and chou"
+        },
+        "6": {
+            "track": "06",
+            "artist": "compound",
+            "title": "pinpon"
+        },
+        "7": {
+            "track": "07",
+            "artist": "nobukazu takemura",
+            "title": "puro"
+        },
+        "8": {
+            "track": "08",
+            "artist": "nobuyasu sakonda",
+            "title": "clockwork idealism"
+        },
+        "9": {
+            "track": "09",
+            "artist": "hirono nishiyama",
+            "title": "to to tin"
+        }
+    },
+    "title": "Childisc II",
+    "url": "http://empilements.incongru.org?c=childisc-ii"
+}

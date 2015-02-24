@@ -1,0 +1,97 @@
+{
+    "authors": [
+        "Gumbi et Melorman"
+    ],
+    "date": "2011-11-22",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Proem",
+            "title": "Route 1 (Nautilis remix v.2)"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Mint",
+            "title": "Dead Pixel (Headphone Science remix)"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Nightmares On Wax",
+            "title": "Playtime (John Mc Entire remix)"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Amon tobin",
+            "title": "Verbal (Boom Bip remix)"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Funki Porcini",
+            "title": "King Ashabanapal (Plaid remix)"
+        },
+        "6": {
+            "track": "06",
+            "artist": "The Cinematic Orchestra",
+            "title": "Channel one suite (Tom Tyler remix)"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Darkhalo",
+            "title": "Analog snow bunny girl (Blisaed's blue mix)"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Ilkae",
+            "title": "Luminette (Landau remix)"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Asa & Koan Sound",
+            "title": "Kaneda (Stumbleine remix)"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Ulrich Schnauss",
+            "title": "Shine (Mint remix)"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Blackfeel Wite",
+            "title": "Silence (STM Rozhdenie remix)"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Bloc Party",
+            "title": "Where is Home (Burial remix)"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Subwave",
+            "title": "I Need You (Bop remix)"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Hopeless Local Marching Band",
+            "title": "And The Man Cannot Describe Himself (Maps And Diagrams remix)"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Tisane",
+            "title": "Sibuiya Station (Unit 21 Remix)"
+        },
+        "16": {
+            "track": "16",
+            "artist": "DMX Krew",
+            "title": "You Can't Hide Your Love [Hidden Love Mix]"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Tycho - Send and receive",
+            "title": "(Chachi Jones remix)"
+        }
+    },
+    "title": "Récital Sonore VIII",
+    "url": "http://empilements.incongru.org?c=recital-sonore-viii"
+}

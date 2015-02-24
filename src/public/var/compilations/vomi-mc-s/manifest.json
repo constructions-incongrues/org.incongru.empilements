@@ -1,0 +1,42 @@
+{
+    "authors": [
+        "Klaus Vomi"
+    ],
+    "date": "2012-02-28",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Nouveau riche",
+            "title": "Elektronische Dierentuin"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Gangpol und mit",
+            "title": "machine à remonter le temps"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Taktloss feat busdriver",
+            "title": "wunder bars"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Nouveau riche",
+            "title": "Pomp Les Volumes"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Gangpol und mit",
+            "title": "ghetto galaxy"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Taktloss feat Mc Basstard",
+            "title": "Dogma"
+        }
+    },
+    "title": "Vomi MC's",
+    "url": "http://empilements.incongru.org?c=vomi-mc-s"
+}

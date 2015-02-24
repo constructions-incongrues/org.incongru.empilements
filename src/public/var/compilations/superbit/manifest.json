@@ -1,0 +1,92 @@
+{
+    "authors": [
+        "Eat Rabbit"
+    ],
+    "date": "2011-11-17",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Kommando Liebe",
+            "title": "I N F E C T E D"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Bad Land Farmers",
+            "title": "Fastest train on the railroad"
+        },
+        "3": {
+            "track": "03",
+            "artist": "The J. Arthur Keenes Band",
+            "title": "You Sunk My Spaceship!"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Lektrogirl featuring MC Tighty Whitey",
+            "title": "Poupée Flash"
+        },
+        "5": {
+            "track": "05",
+            "artist": "The Hardliner",
+            "title": "Zolöft Blues"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Psilodump",
+            "title": "Kom tillbakaaa"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Pontonius",
+            "title": "7000 Angstrom"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Stranglecop",
+            "title": "Emergency Car!"
+        },
+        "9": {
+            "track": "09",
+            "artist": "La Bite à Bertier",
+            "title": "Oh no!"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Egotronic",
+            "title": "Ich Weiss Bescheid"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Don Augusto",
+            "title": "Alto"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Rauberhole",
+            "title": "Micromusic rap"
+        },
+        "13": {
+            "track": "13",
+            "artist": "386 DX",
+            "title": "Группа крови"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Cowp",
+            "title": "Solomonshort"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Logicbomb",
+            "title": "Vol de nuit"
+        },
+        "16": {
+            "track": "16",
+            "artist": "x|k",
+            "title": "Lazerlit"
+        }
+    },
+    "title": "Superbit",
+    "url": "http://empilements.incongru.org?c=superbit"
+}

@@ -1,0 +1,102 @@
+{
+    "authors": [
+        "Big Pink Ping"
+    ],
+    "date": "2012-12-26",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "brunk",
+            "title": "violence on tv"
+        },
+        "2": {
+            "track": "02",
+            "artist": "The units",
+            "title": "high pressure days"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Sans-Blanc",
+            "title": "Volvoluv"
+        },
+        "4": {
+            "track": "04",
+            "artist": " EeL",
+            "title": "Little Prince Loves You"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Fat32",
+            "title": "Hard Drive"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Gwilly Edmondez",
+            "title": "Opening Title"
+        },
+        "7": {
+            "track": "07",
+            "artist": " Enio Morricona",
+            "title": "robodog"
+        },
+        "8": {
+            "track": "08",
+            "artist": "V.D.B. Joel",
+            "title": "Video Funk"
+        },
+        "9": {
+            "track": "09",
+            "artist": "peter thomas - moonflowers & miniskirts",
+            "title": "happening in white main theme"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Marx Roach",
+            "title": "freedom day"
+        },
+        "11": {
+            "track": "11",
+            "artist": " Jeri Rossi",
+            "title": "I Left My Heart But I Don't Know Where"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Quattro Stagioni",
+            "title": "the brains other supplier"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Ground Zero",
+            "title": "thema mao 2"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Jared C Balogh",
+            "title": "TheSomewhat Unlucky"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Sarah Weis",
+            "title": "Quentin TarantiNo"
+        },
+        "16": {
+            "track": "16",
+            "artist": "hella",
+            "title": "self checkout"
+        },
+        "17": {
+            "track": "17",
+            "artist": "spazz",
+            "title": "spudboy"
+        },
+        "18": {
+            "track": "18",
+            "artist": "The Coasters",
+            "title": "Get An Ugly Girl To Marry You"
+        }
+    },
+    "title": "Everything But The Pet Shop Boys",
+    "url": "http://empilements.incongru.org?c=everything-but-the-pet-shop-boys"
+}

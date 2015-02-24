@@ -1,0 +1,57 @@
+{
+    "authors": [
+        "Nate"
+    ],
+    "date": "2011-11-23",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Bangkok Impact",
+            "title": "Face to Interface"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Rude 66",
+            "title": "my 909"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Beta Evers",
+            "title": "im porsche 928 uber die autobahn"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Model500",
+            "title": "OFI"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Goudron",
+            "title": "Scalliwagz"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Adult",
+            "title": "Nite Life"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Binarpilot",
+            "title": "Smile"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Suibom Serum",
+            "title": "Because I am"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Debmaster",
+            "title": "Superman"
+        }
+    },
+    "title": "Super Futur",
+    "url": "http://empilements.incongru.org?c=super-futur"
+}

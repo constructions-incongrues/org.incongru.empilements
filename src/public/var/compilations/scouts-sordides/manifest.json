@@ -1,0 +1,120 @@
+{
+    "authors": [
+        "Iris",
+        "Magda Behr",
+        "Flavien",
+        "Goupil et Bertier"
+    ],
+    "date": "2011-12-23",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Dominique Ney",
+            "title": "Mais ne nous delivrez pas du mal"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Katamari Damacy Music",
+            "title": "Cherry Tree Times"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Lubos Fiser",
+            "title": "The Sermon"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Amanda",
+            "title": "Up Against The Wall Redneck Mama Edit"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Annie",
+            "title": "It's the Hard-Knock Life"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Jerry Goldsmith",
+            "title": "Ave Satani"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Beequeen",
+            "title": "The Maypole Song"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Celia et Nelia",
+            "title": "Le Serpent"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Dead Man's Bones",
+            "title": "My Body's a Zombie For You"
+        },
+        "10": {
+            "track": "10",
+            "artist": "France Gall et Maurice Biraud",
+            "title": " La Petite"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Jacques Higelin",
+            "title": "La Croisade"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Ricky Wilde",
+            "title": "I Am an Astronaut"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Les Rappeurs Sans Tete",
+            "title": "Les Rappeurs Sans Tete"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Marilyn Manson",
+            "title": "Lunchbox"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Philippe Renaux",
+            "title": "Concerto Pour Enfant et Moog"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Portal",
+            "title": "Still Alive on a Music Box"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Serge Gainsbourg",
+            "title": "Lemon Incest"
+        },
+        "18": {
+            "track": "18",
+            "artist": "The Langley School Music Project",
+            "title": "Space Oddity"
+        },
+        "19": {
+            "track": "19",
+            "artist": "The GBBG Sexx Toy Akestra",
+            "title": "La collection de Papa"
+        },
+        "20": {
+            "track": "20",
+            "artist": "Dimey Bluteau",
+            "title": "Trefle a Quatre Feuilles"
+        },
+        "21": {
+            "track": "21",
+            "artist": "Vaska Jankovaska",
+            "title": "Ederlezi"
+        }
+    },
+    "title": "Scouts Sordides",
+    "url": "http://empilements.incongru.org?c=scouts-sordides"
+}

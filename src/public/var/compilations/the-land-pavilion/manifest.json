@@ -1,0 +1,97 @@
+{
+    "authors": [
+        "Kim Kitanas"
+    ],
+    "date": "2011-11-29",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Bruce Haack & Ed Harvey",
+            "title": "Snow Job"
+        },
+        "2": {
+            "track": "02",
+            "artist": "You Don't Have To Say You Love Me",
+            "title": "Isao Tomita Electric Samurai"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Dhuo",
+            "title": "Walkin (Dub Mix)"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Unknown Artist",
+            "title": "The Land Pavilion, Epcot (Area Music Loop)"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Electro Keyboard Orchestra",
+            "title": "The Soaring Sea Gull"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Georges Grunblatt",
+            "title": "Loopie De Loop"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Mikio Masuda",
+            "title": "Moon Stone"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Carol",
+            "title": "So Low"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Bilitis",
+            "title": "Promenade"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Geneva Jacuzzi",
+            "title": "Space Heater"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Gary War",
+            "title": "Highspeed Drift"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Seth Price",
+            "title": "Keep Hollywood Close"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Chihei Hatakeyama",
+            "title": "Waves"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Ariel Pink",
+            "title": "Suicide Notice"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Katsutoshi Morizono",
+            "title": "Nightbird"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Julie Felix",
+            "title": "The Big Bang"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Lee Ritenour",
+            "title": "Sugarloaf Express"
+        }
+    },
+    "title": "The Land Pavilion",
+    "url": "http://empilements.incongru.org?c=the-land-pavilion"
+}

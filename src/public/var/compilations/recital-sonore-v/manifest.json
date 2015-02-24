@@ -1,0 +1,87 @@
+{
+    "authors": [
+        "Gumbi"
+    ],
+    "date": "2011-11-08",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Let's Go Bowling",
+            "title": "Mr. Twist"
+        },
+        "2": {
+            "track": "02",
+            "artist": "The Silencers",
+            "title": "Policeman"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Skinnerbox",
+            "title": "Ditch Digger"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Mephiskapheles",
+            "title": "Attack of the geniuses"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Decepticonz",
+            "title": "Circus of the Stars"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Thumper",
+            "title": "All fall down"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Catch22",
+            "title": "Riding the Fourth Wave"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Mad Caddies",
+            "title": "Monkeys"
+        },
+        "9": {
+            "track": "09",
+            "artist": "MU330",
+            "title": "L.A."
+        },
+        "10": {
+            "track": "10",
+            "artist": "Liberator",
+            "title": "Youth of Today"
+        },
+        "11": {
+            "track": "11",
+            "artist": "The Articles",
+            "title": "Sketches Of Xochi's"
+        },
+        "12": {
+            "track": "12",
+            "artist": "New-York ska-jazz Ensemble",
+            "title": "Tilt-a-whirl"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Cherry Poppin' Daddies",
+            "title": "Ding-Dong Daddy of the D-Car Line"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Mephiskapheles",
+            "title": "Hard Times"
+        },
+        "16": {
+            "track": "16",
+            "artist": "The Dave Hillyard Rocksteady 7",
+            "title": "Playtime"
+        }
+    },
+    "title": "Récital Sonore V",
+    "url": "http://empilements.incongru.org?c=recital-sonore-v"
+}

@@ -1,0 +1,102 @@
+{
+    "authors": [
+        "Gakona"
+    ],
+    "date": "2011-11-03",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Pansonic",
+            "title": "Teurastamo"
+        },
+        "2": {
+            "track": "02",
+            "artist": "If",
+            "title": "Superman"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Faceless Mind",
+            "title": "Ocean Movers"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Snuff Crew",
+            "title": "Control"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Orgue Electronique",
+            "title": "Suck Seed"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Crash Course in Science",
+            "title": "Cardboard Lamb"
+        },
+        "7": {
+            "track": "07",
+            "artist": "DJ Pierre",
+            "title": "Acid Pop"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Legowelt",
+            "title": "Slowjam Deeptechno"
+        },
+        "9": {
+            "track": "09",
+            "artist": "D'Marc Cantu",
+            "title": "Black Tears"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Basic Soul Unit",
+            "title": "Soulspeak"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Mark Broom",
+            "title": "Twenty Nine"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Jeff Mills",
+            "title": "i9"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Unit Moebius",
+            "title": "Summertime"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Triphase",
+            "title": "TRP6-A3"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Esoteric",
+            "title": "Odd Sins A"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Curley",
+            "title": "Kibra Hacha"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Rude66",
+            "title": "La Route"
+        },
+        "18": {
+            "track": "18",
+            "artist": "D.A.F.",
+            "title": "Alles Ist Gut"
+        }
+    },
+    "title": "Electric Rain",
+    "url": "http://empilements.incongru.org?c=electric-rain"
+}

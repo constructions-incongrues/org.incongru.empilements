@@ -1,0 +1,99 @@
+{
+    "authors": [
+        "Bozoo",
+        "Maryn",
+        "Fita et Keke"
+    ],
+    "date": "2011-10-19",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Unknown Artist",
+            "title": "Intro"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Kikifruit",
+            "title": "Rave On Black Kid !!!"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Huoratron",
+            "title": "The New Shit"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Unknown Artist",
+            "title": "Alert"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Aterrmatta",
+            "title": "Seres humanos preparense para la dominacion intraterricola"
+        },
+        "6": {
+            "track": "06",
+            "artist": "JayTresh",
+            "title": "cutvox"
+        },
+        "7": {
+            "track": "07",
+            "artist": "DjMoule",
+            "title": "Jami-Hendrix"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Emotional Joystick",
+            "title": "Untitled Gabber Song"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Knifeandchop",
+            "title": "Thou shalt always kill remix"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Bros before hoes",
+            "title": "California Love 35 District Rmx"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Baby Bro",
+            "title": "nous sommes Baby'bro"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Linear Movement",
+            "title": "Night In June"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Datassette",
+            "title": "Minus Fourteen"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Unicorn Kid",
+            "title": "Nuts n Milk"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Din Stalker",
+            "title": "Dumklang"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Fukkk Offf",
+            "title": "Rave Is King (Original Mix)"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Unknown Artist",
+            "title": "Respirateur"
+        }
+    },
+    "title": "Défibrilateur Sonore",
+    "url": "http://empilements.incongru.org?c=defibrilateur-sonore"
+}

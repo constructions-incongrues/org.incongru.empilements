@@ -1,0 +1,82 @@
+{
+    "authors": [
+        "Parasite"
+    ],
+    "date": "2011-11-16",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "BARY ADAMSON",
+            "title": "It's Business as Usual"
+        },
+        "2": {
+            "track": "02",
+            "artist": "SALEM",
+            "title": "Sick"
+        },
+        "3": {
+            "track": "03",
+            "artist": "THIRD EYES FONDATION",
+            "title": "I've Lost That Lovin' Feline"
+        },
+        "4": {
+            "track": "04",
+            "artist": "JOHN MURPHY",
+            "title": "Welcome to Britain"
+        },
+        "5": {
+            "track": "05",
+            "artist": "COM TRUISE",
+            "title": "Cyanide Sisters"
+        },
+        "6": {
+            "track": "06",
+            "artist": "BOARD OF CANADA",
+            "title": "Statue Of Liberty"
+        },
+        "7": {
+            "track": "07",
+            "artist": "CALVIN  HARRIS",
+            "title": "Traffic Cops"
+        },
+        "8": {
+            "track": "08",
+            "artist": "M83",
+            "title": "On a White Lake, Near a Green Mountain"
+        },
+        "9": {
+            "track": "09",
+            "artist": "UNDERWORLD",
+            "title": "Glam Bucket"
+        },
+        "10": {
+            "track": "10",
+            "artist": "NIN",
+            "title": "Ghosts I"
+        },
+        "11": {
+            "track": "11",
+            "artist": "YOKO KANNO",
+            "title": "Trees Make Sees"
+        },
+        "12": {
+            "track": "12",
+            "artist": "KLEMENT",
+            "title": "Eternity"
+        },
+        "13": {
+            "track": "13",
+            "artist": "MéLODiK PiNPON",
+            "title": "Deux pèches boum boum"
+        },
+        "14": {
+            "track": "14",
+            "artist": " TOM HIEL",
+            "title": "Swimming with Sharks"
+        }
+    },
+    "title": "People Are Sleepingless",
+    "url": "http://empilements.incongru.org?c=people-are-sleepingless"
+}

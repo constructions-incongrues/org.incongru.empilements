@@ -1,0 +1,88 @@
+{
+    "authors": [
+        "Bertier",
+        "Bozoo et Eat-Rabbit"
+    ],
+    "date": "2011-11-09",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Sol Dat",
+            "title": "Make Yr Car Look Extremely Pretty"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Airborn Audio",
+            "title": "Miami the jungle"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Cybotron",
+            "title": "Cosmic Cars (Dub)"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Mesu kasumai",
+            "title": "i-75"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Yello",
+            "title": "I Love You"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Ceephax Acid Crew",
+            "title": "Woof Acid"
+        },
+        "7": {
+            "track": "07",
+            "artist": "T.Raumschmiere",
+            "title": "Monstertruckdriver"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Patric D. Martin",
+            "title": "I Like 'lectric Motors"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Michael knight (dmx krew)",
+            "title": "knight ryder (12inch version)"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Melodik Pinpon",
+            "title": "J'crame ma paye"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Stu",
+            "title": "Scooter"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Mike Patton",
+            "title": "Ford Mustang"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Les Tueurs De La Lune De Miel",
+            "title": "Route Nationale 7"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Squarepusher",
+            "title": "My Red Hot Car"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Satellite and atom christal",
+            "title": "Boulevard Circulaire"
+        }
+    },
+    "title": "Siège Incliné",
+    "url": "http://empilements.incongru.org?c=siege-incline"
+}

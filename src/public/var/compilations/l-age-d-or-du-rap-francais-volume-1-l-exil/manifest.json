@@ -1,0 +1,47 @@
+{
+    "authors": [
+        "Morusque et Fchaff"
+    ],
+    "date": "2013-03-01",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Bernard Lavilliers",
+            "title": "San Salvador"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Joe Dassin",
+            "title": "L'été indien"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Johnny Hallyday",
+            "title": "Poème Sur La 7ème"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Pierre Vassiliu",
+            "title": "En vadrouille a montpellier"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Sacha Distel",
+            "title": "Le bateau blanc"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Visage",
+            "title": "Fade To Grey"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Yves Simon",
+            "title": "J'ai rêvé New York"
+        }
+    },
+    "title": "L'Âge d'Or Du Rap Français, Volume 1 - L'Exil",
+    "url": "http://empilements.incongru.org?c=l-age-d-or-du-rap-francais-volume-1-l-exil"
+}

@@ -1,0 +1,102 @@
+{
+    "authors": [
+        "Paul Kersey"
+    ],
+    "date": "2011-12-21",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Michael Kamen",
+            "title": "Opening Titles"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Elliot Goldenthal",
+            "title": "The Pet Sematary"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Michael Small",
+            "title": "On The Roof"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Jerry Fielding",
+            "title": "Suicide"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Jerry Goldsmith",
+            "title": "Mother's Room"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Jay Chattaway",
+            "title": "Maniac's Theme (Main Title)"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Goblin",
+            "title": "Strive After Dark"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Wendy Carlos",
+            "title": "The Rocky Mountains"
+        },
+        "9": {
+            "track": "09",
+            "artist": "John Carpenter",
+            "title": "Tommy Tells Of Ghost Ships"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Bernard Herrman",
+            "title": "The Toys"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Pino Danaggio",
+            "title": "Sleaze_Karen's Nightmare"
+        },
+        "12": {
+            "track": "12",
+            "artist": "John Harrison",
+            "title": "Something To Tide You Over"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Joseph LoDuca",
+            "title": "Love Never Dies"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Giorgio Moroder",
+            "title": "The Wheel"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Richard Band",
+            "title": "Prologue_Main Title"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Jay Chattaway",
+            "title": "Flashback Montage"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Howard Shore",
+            "title": "Finale"
+        },
+        "18": {
+            "track": "18",
+            "artist": "Jerry Goldsmith",
+            "title": "End Title (All The Power)"
+        }
+    },
+    "title": "Assemblage à Vocation Épouvantable",
+    "url": "http://empilements.incongru.org?c=assemblage-a-vocation-epouvantable"
+}

@@ -1,0 +1,102 @@
+{
+    "authors": [
+        "Gumbi"
+    ],
+    "date": "2011-10-23",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Richard Devine",
+            "title": "Key Angler"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Bola",
+            "title": "Noop"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Bogdan Raczynski",
+            "title": "Thinking of You Thinking of Me"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Deceptikon",
+            "title": "Reeds, Tines, Memphis Steel"
+        },
+        "5": {
+            "track": "05",
+            "artist": "The Flashbulb",
+            "title": " Warren"
+        },
+        "6": {
+            "track": "06",
+            "artist": "DNN",
+            "title": "Am pion"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Kattoo",
+            "title": "Place 8"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Boy Is Fiction",
+            "title": "Tomorrow Not Today"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Kodomo",
+            "title": "Equals Zero"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Stendeck",
+            "title": "Happy Little Children Playing on the Cherry Tree"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Ochre",
+            "title": "Sticklebrink Synphony"
+        },
+        "12": {
+            "track": "12",
+            "artist": "The Black Dog",
+            "title": "Olivine"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Mrs Jynx",
+            "title": "Barking for fun"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Displacer",
+            "title": "Radioactive"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Cheju",
+            "title": "Bellflowerroot (Preston remix)"
+        },
+        "16": {
+            "track": "16",
+            "artist": "The Gentle People",
+            "title": "Journey [Aphex Twin Care Mix]"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Velours Perfect",
+            "title": "Sunrise Sunset"
+        },
+        "18": {
+            "track": "18",
+            "artist": "Fieldtriqp",
+            "title": "Glk"
+        }
+    },
+    "title": "Récital Sonore II",
+    "url": "http://empilements.incongru.org?c=recital-sonore-ii"
+}

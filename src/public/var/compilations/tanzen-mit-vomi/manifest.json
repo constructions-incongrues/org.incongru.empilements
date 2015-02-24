@@ -1,0 +1,107 @@
+{
+    "authors": [
+        "Klaus Vomi"
+    ],
+    "date": "2011-11-18",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Felix Kubin",
+            "title": "Die Kulturelle revolution"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Die Radierer",
+            "title": "Aller guten dinge sind 1, 2, 3"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Foyer des arts",
+            "title": "Schimmliges Brot"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Die Radierer",
+            "title": "Oh Katzenfrau"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Das M",
+            "title": "Sturzflug durch das weltbild"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Der Plan",
+            "title": "Die Welt ist schlecht"
+        },
+        "7": {
+            "track": "07",
+            "artist": "Fehlfarben",
+            "title": "Apokalypse"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Keinmensch!",
+            "title": "Dickarsch"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Die Gesunden",
+            "title": "Die Gesunden Kommen"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Foyer des arts",
+            "title": "Hubschraubereinsatz"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Daf",
+            "title": "Ich und die wirklichkeit"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Berlin Express",
+            "title": "Die Russian kommen"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Saal 2",
+            "title": "Ich liebe Donald Duck"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Keinmensch!",
+            "title": "Kekeinmensch!"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Die Gesunden",
+            "title": "Film Musik"
+        },
+        "16": {
+            "track": "16",
+            "artist": "Schwefelgelb",
+            "title": "Spieglein Spieglein"
+        },
+        "17": {
+            "track": "17",
+            "artist": "Der Plan",
+            "title": "Du du bist"
+        },
+        "18": {
+            "track": "18",
+            "artist": "Einsturzende Neubauten",
+            "title": "Hirnlego"
+        },
+        "19": {
+            "track": "19",
+            "artist": "Felix Kubin",
+            "title": "Waschzwangmama"
+        }
+    },
+    "title": "Tanzen Mit Vomi",
+    "url": "http://empilements.incongru.org?c=tanzen-mit-vomi"
+}

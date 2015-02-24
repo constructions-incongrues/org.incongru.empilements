@@ -1,0 +1,87 @@
+{
+    "authors": [
+        "Le mystérieux papy Makinananas"
+    ],
+    "date": "2011-10-18",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Queen midi",
+            "title": "We will rock you"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Francisco Andres",
+            "title": "Pop Muzik"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Din stalker",
+            "title": "Lidilidi"
+        },
+        "4": {
+            "track": "04",
+            "artist": "Scott bradlee",
+            "title": "Regulate (Toy Instrument remix)"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Ed cox",
+            "title": "Arabian raves organ mix"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Hudson Mohawke",
+            "title": "Thunder Bay "
+        },
+        "7": {
+            "track": "07",
+            "artist": "EI-P",
+            "title": "Drones Over BKLYN"
+        },
+        "8": {
+            "track": "08",
+            "artist": "The Source",
+            "title": "Yeah Yeah Yeah"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Wali band",
+            "title": "Baik baik sayang (disco  mix)"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Fellow",
+            "title": "Hands Dem Up"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Fast Radio",
+            "title": "Under My Thumb"
+        },
+        "12": {
+            "track": "12",
+            "artist": "Hadise",
+            "title": "Düm Tek Tek"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Hercelot",
+            "title": "Owing to difference in music char"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Mayhem",
+            "title": "Nintendon't"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Dada Life",
+            "title": "Happy Violence"
+        }
+    },
+    "title": "Il est midi, we will rock you",
+    "url": "http://empilements.incongru.org?c=il-est-midi-we-will-rock-you"
+}

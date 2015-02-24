@@ -1,0 +1,89 @@
+{
+    "authors": [
+        "Iris",
+        "Béni",
+        "Mike et Bertier"
+    ],
+    "date": "2011",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Kant Kino",
+            "title": "What's Your Porn"
+        },
+        "2": {
+            "track": "02",
+            "artist": "Alain Gallet",
+            "title": "Un jour… anywhere"
+        },
+        "3": {
+            "track": "03",
+            "artist": "Cruise Family",
+            "title": "UP TO US"
+        },
+        "4": {
+            "track": "04",
+            "artist": "David Bowie",
+            "title": "Velvet Goldmine"
+        },
+        "5": {
+            "track": "05",
+            "artist": "Unknown Artist",
+            "title": "Deadly"
+        },
+        "6": {
+            "track": "06",
+            "artist": "Marino Marini",
+            "title": "Guaglione"
+        },
+        "7": {
+            "track": "07",
+            "artist": "J. M. Band",
+            "title": "Computer Monkey"
+        },
+        "8": {
+            "track": "08",
+            "artist": "Joe Lentini",
+            "title": "Arthur"
+        },
+        "9": {
+            "track": "09",
+            "artist": "Kate Bush",
+            "title": "Suspended in Gaffa"
+        },
+        "10": {
+            "track": "10",
+            "artist": "Mediengruppe Telekommander",
+            "title": "Kommanda"
+        },
+        "11": {
+            "track": "11",
+            "artist": "Michel Lorin et son ensemble",
+            "title": "Douceur tropicale"
+        },
+        "12": {
+            "track": "12",
+            "artist": "mtk121 st",
+            "title": "Emotions in a Box"
+        },
+        "13": {
+            "track": "13",
+            "artist": "Sir Edmund et l'Autre",
+            "title": "Poème sur la Septième"
+        },
+        "14": {
+            "track": "14",
+            "artist": "Scarlatti Goes Electro",
+            "title": "live in Poitiers 2010"
+        },
+        "15": {
+            "track": "15",
+            "artist": "Spice Girls",
+            "title": "Viva Forever"
+        }
+    },
+    "title": "L'Éventail de la Destinée",
+    "url": "http://empilements.incongru.org?c=l-eventail-de-la-destinee"
+}

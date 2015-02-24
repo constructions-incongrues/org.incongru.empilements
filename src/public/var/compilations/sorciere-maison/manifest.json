@@ -1,0 +1,67 @@
+{
+    "authors": [
+        "Parasite"
+    ],
+    "date": "2012-02-14",
+    "is_enabled": true,
+    "is_featured": false,
+    "playlist": {
+        "1": {
+            "track": "01",
+            "artist": "Unknown Artist",
+            "title": "La sorcière grabouilla"
+        },
+        "2": {
+            "track": "02",
+            "artist": "BLOWIN UP",
+            "title": "gvcci hvcci"
+        },
+        "3": {
+            "track": "03",
+            "artist": "WHITE RING",
+            "title": "IXC999"
+        },
+        "4": {
+            "track": "04",
+            "artist": "oOoOO",
+            "title": "egyptynlvr"
+        },
+        "5": {
+            "track": "05",
+            "artist": "SALEM",
+            "title": "King Night"
+        },
+        "6": {
+            "track": "06",
+            "artist": "FOSTERCARE",
+            "title": "heavens gate"
+        },
+        "7": {
+            "track": "07",
+            "artist": "AIMON",
+            "title": "symbols"
+        },
+        "8": {
+            "track": "08",
+            "artist": "DEAD VIRGIN",
+            "title": "watver"
+        },
+        "10": {
+            "track": "10",
+            "artist": "BAM ACAB",
+            "title": "expect"
+        },
+        "11": {
+            "track": "11",
+            "artist": "PURITY RING",
+            "title": "Lofticries"
+        },
+        "12": {
+            "track": "12",
+            "artist": "BRITNEY SPEARS",
+            "title": "Till The World Ends (Salem Remix)"
+        }
+    },
+    "title": "Sorcière Maison",
+    "url": "http://empilements.incongru.org?c=sorciere-maison"
+}
