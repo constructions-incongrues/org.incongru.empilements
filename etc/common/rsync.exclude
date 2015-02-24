@@ -13,3 +13,4 @@
 /tests.php
 /vendor/constructions-incongrues/ananas-build-toolkit
 /src/public/var/compilations/*/tracks
+/.vagrant

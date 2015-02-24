@@ -13,3 +13,6 @@
 *.mp3
 *.zip
 /tests*
+
+# vagrant
+/.vagrant

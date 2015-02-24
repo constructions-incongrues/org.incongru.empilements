@@ -1,8 +1,8 @@
 {
    "repositories": [
         {
-            "type": "composer",
-            "url": "http://constructions-incongrues.github.com/packages"
+            "type": "git",
+            "url": "git@github.com:constructions-incongrues/ananas-build-toolkit.git"
         }
     ],
     "require": {
@@ -21,7 +21,7 @@
         "twig/twig": "~1.8"
     },
     "require-dev": {
-        "constructions-incongrues/ananas-build-toolkit": "dev-master"
+        "constructions-incongrues/ananas-build-toolkit": "0.21.*"
     },
     "autoload": {
         "psr-0": {
