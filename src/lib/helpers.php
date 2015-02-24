@@ -12,33 +12,35 @@ function get_compilations_specs($directory)
     $compilationsSpec = array();
     foreach ($compilations as $compilation) {
         // Extract manifest data and playlists
-        $compilationsSpec[$compilation] = array(
-            'name'      => $compilation,
-            'manifest'  => parse_ini_file(
-                sprintf('%s/../public/var/compilations/%s/manifest.ini', __DIR__, $compilation)
-            ),
-            'tracks'    => glob(sprintf('%s/../public/var/compilations/%s/tracks/*.mp3', __DIR__, $compilation)),
-        );
-
-        if (!$compilationsSpec[$compilation]['tracks']) {
+        $pathManifest = sprintf('%s/../public/var/compilations/%s/manifest.json', __DIR__, $compilation);
+        if (!is_readable($pathManifest)) {
             continue;
         }
+        $manifest = json_decode(file_get_contents($pathManifest), true);
+        if (!$manifest) {
+            continue;
+        }
+        $compilationsSpec[$compilation] = array(
+            'name'      => $compilation,
+            'manifest'  => $manifest
+        );
 
         // Generate compilation artists list
         $artists = array();
-        foreach ($compilationsSpec[$compilation]['tracks'] as $track) {
-            $parts = explode(' - ', $track);
-            $artists[] = $parts[1];
+        foreach ($compilationsSpec[$compilation]['manifest']['playlist'] as $track) {
+            $artists[] = ucwords($track['artist']);
         }
-        $compilationsSpec[$compilation]['artists'] = $artists;
+        $compilationsSpec[$compilation]['manifest']['artists'] = $artists;
+
 
         // Generate compilation description (used in ogp)
-        $compilationsSpec[$compilation]['description'] = sprintf(
+        $compilationsSpec[$compilation]['manifest']['description'] = sprintf(
             '%d titres sélectionnés avec amour par %s. Avec : %s',
-            count($compilationsSpec[$compilation]['tracks']),
-            $compilationsSpec[$compilation]['manifest']['authors'],
-            implode(', ', $compilationsSpec[$compilation]['artists'])
+            count($compilationsSpec[$compilation]['manifest']['playlist']),
+            implode(', ', $compilationsSpec[$compilation]['manifest']['authors']),
+            implode(', ', $compilationsSpec[$compilation]['manifest']['artists'])
         );
+
 
         // Generate compilation page title
         $compilationsSpec[$compilation]['title'] = sprintf(

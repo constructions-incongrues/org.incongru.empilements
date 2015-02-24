@@ -2,14 +2,14 @@
 
 {% block content %}
 <div class="grid_8 ">
-	<h1 class="contributor">| {{ infos.date }} <span class="pink">//</span> {{ infos.authors }}</h1>
+	<h1 class="contributor">| {{ infos.date }} <span class="pink">//</span> {{ infos.authors|join(', ') }}</h1>
 	<h2 class="releasename">{{ infos.title }}</h2>
-	
+
 	<p class="artwork"><img class="cover" src="{{ app.request.basepath }}/var/compilations/{{ compilation }}/cover.gif" /></p>
 	<ol class="playlist">
 {% for track in tracks %}
 		<li>
-			<a class="track" href="{{ track.url }}">{{ track.name }}</a>
+			<a class="track" href="{{ app.request.basepath }}/{{ track.url }}">{{ track.name }}</a>
 		</li>
 {% endfor %}
 	</ol>

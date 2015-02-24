@@ -28,9 +28,9 @@ $app['twig']->addExtension(new Twig_Extensions_Extension_Text());
 
 // Controllers
 // -- download compilation
-$app->get('/feed', function (Response $response) use ($app) {
+$app->get('/feed', function () use ($app) {
     // List of available compilations
-    require(__DIR__.'/lib/helpers.php');
+    require(__DIR__.'/../lib/helpers.php');
     $compilations = array_keys(get_compilations_specs(__DIR__.'/compilations'));
 
     // Setup autoloading
@@ -54,8 +54,8 @@ $app->get('/feed', function (Response $response) use ($app) {
     $timestampNewest = 0;
     foreach ($compilations as $compilation) {
         // Gather compilation informations
-        $pathManifest = sprintf('%s/var/compilations/%s/manifest.ini', __DIR__, $compilation);
-        $manifest = parse_ini_file($pathManifest);
+        $pathManifest = sprintf('%s/var/compilations/%s/manifest.json', __DIR__, $compilation);
+        $manifest = file_get_contents(json_decode($pathManifest, true));
         if ($manifest['is_enabled'] != true) {
             continue;
         }
@@ -63,7 +63,7 @@ $app->get('/feed', function (Response $response) use ($app) {
         if ($statManifest['mtime'] > $timestampNewest) {
             $timestampNewest = $statManifest['mtime'];
         }
-        $tracks = glob(sprintf('%s/var/compilations/%s/tracks/*.mp3', __DIR__, $compilation));
+        $tracks = $manifest['playlist'];
         $entryBody = array();
         $entryBody[] = '<ol>';
         foreach ($tracks as $track) {
@@ -133,11 +133,17 @@ $app->get('/{name}', function ($name) use ($app) {
         $infos = $compilationsSpec[$name]['manifest'];
         $title = $compilationsSpec[$name]['title'];
         $tracks = array();
-        foreach ($compilationsSpec[$name]['tracks'] as $track) {
+        foreach ($compilationsSpec[$name]['manifest']['playlist'] as $track) {
             $tracks[] = array(
-                'url'  => sprintf('var/compilations/%s/tracks/%s', $name, rawurlencode(basename($track))),
-                'name' => preg_replace('/^\d\d - (.*)$/', '${1}', basename($track, '.mp3'))
-                );
+                'url'  => sprintf(
+                    'var/compilations/%s/tracks/%s - %s - %s.mp3',
+                    $name,
+                    $track['track'],
+                    $track['artist'],
+                    $track['title']
+                ),
+                'name' => sprintf('%s - %s', $track['artist'], $track['title'])
+            );
         }
         $description = $compilationsSpec[$name]['description'];
     }
