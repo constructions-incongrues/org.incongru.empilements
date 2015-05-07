@@ -2,6 +2,7 @@
 namespace ConstructionsIncongrues\Empilements\Cli;
 
 use ConstructionsIncongrues\Empilements\Cli\Command\ImportCommand;
+use ConstructionsIncongrues\Empilements\Cli\Command\GenerateManifestCommand;
 
 class Application extends \Symfony\Component\Console\Application
 {
@@ -14,6 +15,7 @@ class Application extends \Symfony\Component\Console\Application
     {
         $commands = parent::getDefaultCommands();
         $commands[] = new ImportCommand();
+        $commands[] = new GenerateManifestCommand();
         return $commands;
     }
 }

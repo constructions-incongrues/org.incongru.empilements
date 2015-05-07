@@ -89,7 +89,7 @@ class EmpilementCollection extends FileCollection
         // Collection manifest
         $manifest = array_merge(
             $this->parameters['manifest'],
-            array('playlist' => array(), 'url' => 'http://empilements.incongru.org?c='.$this->parameters['slug'])
+            array('playlist' => array(), 'url' => 'http://empilements.incongru.org/'.$this->parameters['slug'])
         );
 
         // Files to  be included in archive
@@ -138,7 +138,7 @@ class EmpilementCollection extends FileCollection
             $id3->tag_data = array(
                 'album'   => array($this->parameters['manifest']['title']),
                 'artist'  => array($trackArtist),
-                'comment' => array('http://empilements.incongru.org?c='.$this->parameters['slug']),
+                'comment' => array('http://empilements.incongru.org/'.$this->parameters['slug']),
                 'title'   => array($trackTitle),
                 'track'   => array($trackNumber)
             );

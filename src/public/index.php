@@ -3,6 +3,7 @@ require_once __DIR__.'/../../vendor/autoload.php';
 
 // Imports
 use Symfony\Component\HttpFoundation\Response;
+use Zend\Feed\Writer\Feed;
 
 // Application configuration
 $app = new Silex\Application();
@@ -31,15 +32,10 @@ $app['twig']->addExtension(new Twig_Extensions_Extension_Text());
 $app->get('/feed', function () use ($app) {
     // List of available compilations
     require(__DIR__.'/../lib/helpers.php');
-    $compilations = array_keys(get_compilations_specs(__DIR__.'/compilations'));
-
-    // Setup autoloading
-    set_include_path(get_include_path().PATH_SEPARATOR.'/usr/share/php');
-    require_once('Zend/Loader/Autoloader.php');
-    Zend_Loader_Autoloader::getInstance();
+    $compilations = array_keys(get_compilations_specs(__DIR__.'/var/compilations'));
 
     // Create feed
-    $feed = new Zend_Feed_Writer_Feed;
+    $feed = new Feed();
     $feed->setTitle('Empilements | incongru.org');
     $feed->setLink('http://empilements.incongru.org');
     $feed->setFeedLink('http://feeds.feedburner.com/empilements-incongrus', 'rss');
@@ -52,10 +48,11 @@ $app->get('/feed', function () use ($app) {
 
     // Create feed entries
     $timestampNewest = 0;
+    $entries = array();
     foreach ($compilations as $compilation) {
         // Gather compilation informations
         $pathManifest = sprintf('%s/var/compilations/%s/manifest.json', __DIR__, $compilation);
-        $manifest = file_get_contents(json_decode($pathManifest, true));
+        $manifest = json_decode(file_get_contents($pathManifest), true);
         if ($manifest['is_enabled'] != true) {
             continue;
         }
@@ -67,9 +64,9 @@ $app->get('/feed', function () use ($app) {
         $entryBody = array();
         $entryBody[] = '<ol>';
         foreach ($tracks as $track) {
-            $entryBody[] = sprintf('<li>%s</li>', preg_replace('/^\d+\d+ - (.*)$/', '$1', basename($track, '.mp3')));
+            $entryBody[] = sprintf('<li>%s - %s</li>', $track['artist'], $track['title']);
         }
-        $entryBody[] = sprintf('<img src="http://empilements.incongru.org/compilations/%s/cover.gif" />', $compilation);
+        $entryBody[] = sprintf('<img src="http://empilements.incongru.org/var/compilations/%s/cover.gif" />', $compilation);
         $entryBody[] = '</ol>';
         $entries[$statManifest['mtime']] = array(
             'manifest'  => $manifest,
@@ -82,7 +79,7 @@ $app->get('/feed', function () use ($app) {
     foreach ($entries as $mtime => $item) {
         // Create entry
         $entry = $feed->createEntry();
-        $entry->setTitle(sprintf('%s, par %s', $item['manifest']['title'], $item['manifest']['authors']));
+        $entry->setTitle(sprintf('%s, par %s', $item['manifest']['title'], implode(', ', $item['manifest']['authors'])));
         $entry->setLink($item['manifest']['url']);
         $entry->setContent(implode("\n", $item['body']));
         $entry->setDateCreated($mtime);
@@ -94,10 +91,8 @@ $app->get('/feed', function () use ($app) {
 
     // Serve feed
     $xml = $feed->export('rss');
-    // header('Content-type:application/rss+xml;charset=utf8');
-    // header('Content-length:'.strlen($xml));
-    // echo $xml;
 
+    return $xml;
 })->bind('feed');
 
 // -- homepage
