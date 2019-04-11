@@ -1,18 +1,12 @@
-# composer
-/vendor
-
-# editors
 *.bak
-*~
+*.mp3
 *.swp
-/.idea
-
-# empilements
+*.zip
+*~
+/src/public/uploads
 /src/var/compilations/*/*.zip
 /src/var/compilations/*/tracks/*
-*.mp3
-*.zip
+/src/vendor
 /tests*
-
-# vagrant
-/.vagrant
+/var
+/src/migrator/vendor/

@@ -1,10 +1,11 @@
 {
     "authors": [
+        "Michel Bertier",
         "Iris",
         "Béni",
-        "Mike et Bertier"
+        "Satanik Mike"
     ],
-    "date": "2011",
+    "date": "2011-01-01",
     "is_enabled": true,
     "is_featured": false,
     "playlist": {

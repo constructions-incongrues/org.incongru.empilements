@@ -1,0 +1,24 @@
+{
+    "require": {
+        "alchemy/zippy": " ~0.1",
+        "constructions-incongrues/incongrukit": "dev-master",
+        "intervention/image": "1.6.*",
+        "nass600/get-id3": "dev-master",
+        "psr/log": "~1.0",
+        "silex/silex": "~1.1",
+        "symfony/console": "~2.4",
+        "symfony/filesystem": "~2.4",
+        "symfony/finder": "~2.4",
+        "symfony/process": "~2.4",
+        "symfony/twig-bridge": "~2.4",
+        "twig/extensions": "~1.0",
+        "twig/twig": "~1.8",
+        "zendframework/zend-feed": "2.3.*",
+        "zendframework/zend-servicemanager": "2.3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "ConstructionsIncongrues\\Empilements": "src/src"
+        }
+    }
+}

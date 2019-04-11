@@ -1,0 +1,12 @@
+{
+    "require": {
+        "doctrine/orm": "*",
+        "symfony/yaml": "^4.2",
+        "symfony/finder": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Empilements\\": "src/"
+        }
+    }
+}
