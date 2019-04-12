@@ -23,8 +23,8 @@ services:
 
   php:
     build: .
-    command: ["/bin/sh", "-c", "make configure && php -S 0.0.0.0:8000 -t public"]
-    image: constructionsincongrues/empilements
+    command: ["/bin/sh", "-c", "make configure install && php -S 0.0.0.0:8000 -t public"]
+    image: constructionsincongrues/empilements/php
     labels:
       traefik.frontend.rule: "Host:empilements.incongru.org"
       traefik.port: "8000"
