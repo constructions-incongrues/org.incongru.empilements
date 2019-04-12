@@ -13,7 +13,6 @@ attach: ## Connexion au container hébergeant les sources
 	docker-compose run --rm --entrypoint fixuid --label traefik.enable=false php /bin/bash
 
 build: ## Génération de l'image Docker
-	git submodule update --init --recursive
 	docker-compose build
 
 clean: stop ## Suppression des containers de l'application
