@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  api:
+    image: directus/api:2.0.18
+    environment:
+      DATABASE_HOST: db
+      DATABASE_NAME: "empilements"
+      DATABASE_USERNAME: "root"
+      DATABASE_PASSWORD: "root"
+      ADMIN_EMAIL: "admin@empilements.localhost"
+      ADMIN_PASSWORD: "admin"
+    labels:
+      traefik.frontend.rule: "Host:empilements.incongru.org/api"
+      traefik.port: "80"
+    volumes:
+      - ./etc/api.php.ini:/etc/php7/conf.d/99_empilements.ini
+      - ./src/public/var:/var/www/html/public/uploads/_/originals/var
+      - ./etc/Thumbnailer.php:/var/www/html/src/core/Directus/Filesystem/Thumbnailer.php
+
+  php:
+    build: .
+    command: ["/bin/sh", "-c", "make configure && php -S 0.0.0.0:8000 -t public"]
+    image: constructionsincongrues/empilements
+    labels:
+      traefik.frontend.rule: "Host:empilements.incongru.org/new"
+      traefik.port: "8000"
+    volumes:
+      - ./src:/usr/local/src
