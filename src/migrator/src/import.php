@@ -67,7 +67,7 @@ foreach ($finder as $file) {
             $user->firstName = $curator->name;
             $email = sprintf('%s@empilements.incongru.org', $curator->name);
             $user->email = $email;
-            $user->password = '$2y$10$74FLxsPKPS6a0BUvDKNn4u4/e7cHNodpjrVQGHYhjoUhglb6TIT22'; 
+            $user->password = '$2y$10$74FLxsPKPS6a0BUvDKNn4u4/e7cHNodpjrVQGHYhjoUhglb6TIT22';
             $user->timezone = 'Europe/Paris';
             $user->locale = 'fr-FR';
             $em->persist($user);

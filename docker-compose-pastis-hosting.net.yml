@@ -14,7 +14,7 @@ services:
       DATABASE_USERNAME: "empilements"
       DATABASE_PASSWORD: "s3%2a7zP"
     labels:
-      traefik.frontend.rule: "Host:empilements.incongru.org; PathPrefixStrip:/api"
+      traefik.frontend.rule: "Host:api.empilements.incongru.org"
       traefik.port: "80"
     volumes:
       - ./etc/api.php.ini:/etc/php7/conf.d/99_empilements.ini
