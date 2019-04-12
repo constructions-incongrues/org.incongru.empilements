@@ -11,7 +11,7 @@ help: ## Affiche ce message d'aide
 	done
 
 attach: ## Connexion au container hébergeant les sources
-	FIXUID=`id -u` FIXGID=`id -g` docker-compose -f $(COMPOSE_FILE) run --rm --entrypoint fixuid --label traefik.enable=false php /bin/bash
+	docker-compose -f $(COMPOSE_FILE) run --rm --entrypoint fixuid --user `id -u`:`id -g` --label traefik.enable=false php /bin/bash
 
 build: ## Génération de l'image Docker
 	docker-compose -f $(COMPOSE_FILE) build
@@ -20,7 +20,7 @@ clean: stop ## Suppression des containers de l'application
 	docker-compose -f $(COMPOSE_FILE) rm -f
 
 deploy: ## Configure et déploie l'application
-	PROFILE=$(PROFILE) docker-compose -f $(COMPOSE_FILE) run --rm --entrypoint fixuid php make configure
+	PROFILE=$(PROFILE) docker-compose -f $(COMPOSE_FILE) run --user `id -u`:`id -g` --rm --entrypoint fixuid php make configure
 	rsync -avzm $(RSYNC_PARAMETERS) --exclude-from=./etc/$(PROFILE)/rsync/exclude --include-from=./etc/$(PROFILE)/rsync/include -e "ssh -p $$RSYNC_SSH_PORT" "$$RSYNC_LOCAL_PATH" "$$RSYNC_REMOTE_USER@$$RSYNC_REMOTE_HOST:$$RSYNC_REMOTE_PATH"
 
 db-export:
