@@ -64,6 +64,13 @@ class Empilement
     public $title;
 
     /**
+     * @var string|null
+     *
+     * @ORM\Column(name="slug", type="string", length=200, nullable=true, options={"comment"=""})
+     */
+    public $slug;
+
+    /**
      * @var int|null
      *
      * @ORM\Column(name="cover", type="integer", nullable=true, options={"unsigned"=true,"comment"="La pochette de la compilation (elle doit �tre carr�e)"})
