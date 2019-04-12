@@ -12,5 +12,5 @@ configure: ## Configure l'application en fonction de l'environnement
 		cat $${DIST} | envsubst "`echo "'$${VARS}'"`" > `dirname $${DIST}`/`basename $${DIST} -dist`; \
 	done
 
-install:
+install: ## Installation des dépendances
 	composer install
