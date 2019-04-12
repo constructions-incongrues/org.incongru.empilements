@@ -1,5 +1,10 @@
 version: '2'
 
+networks:
+  default:
+    external:
+      name: traefikpastishostingnet_default
+
 services:
   api:
     image: directus/api:2.0.18
@@ -11,8 +16,9 @@ services:
       ADMIN_EMAIL: "admin@empilements.localhost"
       ADMIN_PASSWORD: "admin"
     labels:
-      traefik.frontend.rule: "Host:empilements.incongru.org/api"
+      traefik.frontend.rule: "Host:empilements.incongru.org; PathPrefixStrip:/api"
       traefik.port: "80"
+    user: ${FIXUID:-1000}:${FIXGID:-1000}
     volumes:
       - ./etc/api.php.ini:/etc/php7/conf.d/99_empilements.ini
       - ./src/public/var:/var/www/html/public/uploads/_/originals/var
@@ -23,7 +29,7 @@ services:
     command: ["/bin/sh", "-c", "make configure && php -S 0.0.0.0:8000 -t public"]
     image: constructionsincongrues/empilements
     labels:
-      traefik.frontend.rule: "Host:empilements.incongru.org/new"
+      traefik.frontend.rule: "Host:empilements.incongru.org; PathPrefixStrip:/new"
       traefik.port: "8000"
     volumes:
       - ./src:/usr/local/src
