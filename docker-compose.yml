@@ -49,12 +49,25 @@ services:
       - ./var/db:/var/lib/mysql
       - ./etc/empilements.sql:/docker-entrypoint-initdb.d/00_empilements.sql
 
+  gatsbyjs:
+    build:
+      context: .
+      dockerfile: gatsbyjs.Dockerfile
+    command: ["develop", "--host=0.0.0.0"]
+    image: constructionsincongrues/empilements/gatsbyjs
+    labels:
+      traefik.frontend.rule: "Host:gatsbyjs.empilements.localhost"
+      traefik.port: "8000"
+    volumes:
+      - .:/usr/local/src
+    working_dir: /usr/local/src/src/public/gatsbyjs
+
   php:
     build: .
     command: ["/bin/sh", "-c", "make configure && php -S 0.0.0.0:8000 -t public"]
     depends_on:
       - db
-    image: constructionsincongrues/empilements
+    image: constructionsincongrues/empilements/php
     labels:
       traefik.frontend.rule: "Host:empilements.localhost"
       traefik.port: "8000"
@@ -75,5 +88,6 @@ services:
         aliases:
           - api.empilements.localhost
           - empilements.localhost
+          - gatsbyjs.empilements.localhost
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
