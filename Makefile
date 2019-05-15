@@ -1,6 +1,7 @@
 COMPOSE_FILE := docker-compose.yml
 PROFILE := empilements.incongru.org
 RSYNC_PARAMETERS=--dry-run
+COMPOSE_SERVICE=php
 
 -include ./etc/$(PROFILE)/.env
 export $(shell sed 's/=.*//' ./etc/$(PROFILE)/.env)
@@ -11,7 +12,7 @@ help: ## Affiche ce message d'aide
 	done
 
 attach: ## Connexion au container hébergeant les sources
-	docker-compose -f $(COMPOSE_FILE) run --rm --entrypoint fixuid --user `id -u`:`id -g` --label traefik.enable=false php /bin/bash
+	docker-compose -f $(COMPOSE_FILE) run --rm --entrypoint "fixuid /bin/sh" --user `id -u`:`id -g` --label traefik.enable=false $(COMPOSE_SERVICE)
 
 build: ## Génération de l'image Docker
 	docker-compose -f $(COMPOSE_FILE) build

@@ -4662,10 +4662,10 @@ gatsby-cli@^2.5.6:
     yargs "^12.0.5"
     yurnalist "^1.0.2"
 
-gatsby-image@^2.0.37:
-  version "2.0.37"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.37.tgz#9c28c3d8c2a249f6f5eff929be67a761658762df"
-  integrity sha512-KdD5LefTmigun2NmvYqoBVXRZ0W0y3Rr9j+yOX6hxU+RJQb9u3gF3vG/dC0Aljwgo2T4zKBqG8wolJ7F2fWj5w==
+gatsby-image@^2.0.38:
+  version "2.0.38"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.38.tgz#348b4a9ba690e1621ec53a7b60405ab525304a7d"
+  integrity sha512-c51nBwQuFlTffFrOs4nDI7fjS+OrWmniklzGSkmLhNojc4YVipYdYMDQLI252xYWzAjToUouCInFErlCTcEYRw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     object-fit-images "^3.2.4"
@@ -4730,10 +4730,10 @@ gatsby-plugin-react-helmet@^3.0.12:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-sharp@^2.0.32:
-  version "2.0.32"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.32.tgz#47ebf2e44ece58560fa8bc604e7904ff9dca1386"
-  integrity sha512-5cLD2VUcKBtIm7QJbSj4fIAv/eqD6KhraHODHjpGwqvwSOdLQB7YcmzSCPnRwxEv+0f2wNrjZYpsd8SmIWfhDw==
+gatsby-plugin-sharp@^2.0.34:
+  version "2.0.34"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.34.tgz#c08159d00d3f3aec23bbe16fca240deffa6cdeb9"
+  integrity sha512-P15HULFZ5TwmAww1TNxSaHrGr+twZBK+VgTM4XBDEazfgbUTDsTRuxEgoS7DqNZg5jlg9W7L+wQ0Nr45jMqiBA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     async "^2.1.2"
@@ -4834,10 +4834,10 @@ gatsby-telemetry@^1.0.6:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-transformer-sharp@^2.1.17:
-  version "2.1.17"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.17.tgz#d7f2261cb0cd9943bada42e82e89179cfa9554fc"
-  integrity sha512-htbkxy2VNInxS5oxZForbKenYP56U/tI6cV630TBO8UkaOFj/8M2vZ6vugcTJHMCwRJNLT1WJ+Y9RAEwPBFnuA==
+gatsby-transformer-sharp@^2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.18.tgz#72d30554d7f25b00f710025b76fe5d25974f01e7"
+  integrity sha512-hZ1lKIdXwCx/yGo1uPo6f6MSsj7zu8Vydjtsrgeo6CgEbGzLuOzvrY+4EZsQn0c4Aq2V9k1s6//fNiR4PX+Z7g==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"

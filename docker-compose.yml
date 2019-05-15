@@ -54,13 +54,13 @@ services:
       context: .
       dockerfile: gatsbyjs.Dockerfile
     command: ["develop", "--host=0.0.0.0"]
+    entrypoint: ["fixuid", "gatsby"]
     image: constructionsincongrues/empilements/gatsbyjs
     labels:
       traefik.frontend.rule: "Host:gatsbyjs.empilements.localhost"
       traefik.port: "8000"
     volumes:
-      - .:/usr/local/src
-    working_dir: /usr/local/src/src/public/gatsbyjs
+      - ./src/gatsbyjs:/usr/local/src
 
   php:
     build: .
