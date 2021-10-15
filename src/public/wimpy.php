@@ -169,14 +169,14 @@ $quirksmode = false;
 // VALUES
 // 1 = from the root 	/path/to/file.mp3
 // 2 = full URL 		http://www.yoursite.com/path/to/file.mp3
-$urlStyle = 1;
+$urlStyle = 2;
 
 
 // -------------------
 // Cross Domain Accessible
 // -------------------
 // Allows this script to be called from another domain (or local file system).
-$allowCrossDomainAccess = true;
+$allowCrossDomainAccess = false;
 
 
 // -------------------
@@ -241,7 +241,7 @@ $encrypt = false;
 // Get ID3 Info
 // -----------------------------
 // Requires the getid3 library.
-$getID3info = false;
+$getID3info = true;
 
 // -----------------------------
 // Extract Image
@@ -299,7 +299,7 @@ $sortOrder = "asc";
 // file		- um
 // ... any other field present.
 // NOTE: When using quirksmode the value set here is overriddden and automatically set to "file"
-$sortIndex = "file";
+$sortIndex = "index";
 
 
 
