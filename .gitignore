@@ -8,11 +8,4 @@
 /.idea
 
 # empilements
-/src/var/compilations/*/*.zip
-/src/var/compilations/*/tracks/*
-*.mp3
-*.zip
-/tests*
-
-# vagrant
-/.vagrant
+/src/public/compilations/*
