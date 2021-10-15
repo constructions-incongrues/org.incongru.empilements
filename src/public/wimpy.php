@@ -299,7 +299,7 @@ $sortOrder = "asc";
 // file		- um
 // ... any other field present.
 // NOTE: When using quirksmode the value set here is overriddden and automatically set to "file"
-$sortIndex = "index";
+$sortIndex = "file";
 
 
 
