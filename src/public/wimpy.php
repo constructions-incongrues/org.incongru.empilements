@@ -241,7 +241,7 @@ $encrypt = false;
 // Get ID3 Info
 // -----------------------------
 // Requires the getid3 library.
-$getID3info = true;
+$getID3info = false;
 
 // -----------------------------
 // Extract Image

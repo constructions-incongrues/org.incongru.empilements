@@ -10,13 +10,15 @@
 
             <div
                 data-coverArtFit="3"
-                data-downloadEnable
+                data-downloadEnable="1"
+                data-infoFormat="3"
+                data-linkEnable="0"
                 data-media="wimpy.php?d=compilations"
                 data-responsive
-                data-getid3="1"
                 data-skin="assets/wimpy/045.tsv"
                 data-startUpText="Empilements"
                 data-wimpyplayer 
+                data-volume="0.5" 
                 style="width: 100%; height: 100%;"
                 >
             </div>
