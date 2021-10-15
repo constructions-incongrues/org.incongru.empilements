@@ -13,6 +13,7 @@
                 data-downloadEnable
                 data-media="wimpy.php?d=compilations"
                 data-responsive
+                data-getid3="1"
                 data-skin="assets/wimpy/045.tsv"
                 data-startUpText="Empilements"
                 data-wimpyplayer 

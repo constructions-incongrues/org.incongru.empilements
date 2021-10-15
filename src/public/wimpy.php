@@ -66,13 +66,13 @@ $httpOption = "auto";
 // Hide Folders
 // -----------------------------
 // A list of folder names to ignore.
-$hide_folders = "getid3,wimpy.buttons,wimpy.skins,wimpy.test,wimpy.getid3,assets,cgi-bin,_notes,_private,_private,_vti_bin,_vti_cnf,_vti_pvt,_vti_txt";
+$hide_folders = "getid3,wimpy.buttons,wimpy.skins,wimpy.test,wimpy.getid3,assets,cgi-bin,_notes,_private,_private,_vti_bin,_vti_cnf,_vti_pvt,_vti_txt,manifest";
 
 // -----------------------------
 // Hide Files
 // ------------------------v
 // A list of file names to ignore.
-$hide_files = "";
+$hide_files = "manifest.json";
 
 // -----------------------------
 // Hide Keywords
@@ -102,7 +102,7 @@ $hide_keywords = ""; //wimpy,config,customizer,source,plugin
 //
 // For example, the "base name" of this file: coverart.jpg
 // is "coverart".
-$coverartBasename = "source"; 
+$coverartBasename = "cover"; 
 
 // -----------------------------
 // Find All Media
